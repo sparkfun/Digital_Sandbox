@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7148,14 +7148,11 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <part name="Q5" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="MMBT2222A"/>
 <part name="U10" library="SparkFun-Sensors" deviceset="LIGHTSENSOR" device="ALS"/>
 <part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
-<<<<<<< HEAD
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="GND37" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+20" library="SparkFun" deviceset="VCC" device=""/>
-=======
-<part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
-<part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
->>>>>>> 76d3d5c328c166ee66574d6e0980eecbfa513a33
+<part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2" value="FIDUCIAL1X2"/>
+<part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2" value="FIDUCIAL1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -7430,16 +7427,13 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <instance part="Q5" gate="G$1" x="266.7" y="-279.4"/>
 <instance part="U10" gate="G$1" x="210.82" y="-185.42"/>
 <instance part="D5" gate="G$1" x="302.26" y="-187.96" rot="R180"/>
-<<<<<<< HEAD
 <instance part="J1" gate="G$1" x="5.08" y="-261.62"/>
 <instance part="GND37" gate="1" x="20.32" y="-274.32"/>
 <instance part="P+20" gate="1" x="20.32" y="-256.54" smashed="yes">
 <attribute name="VALUE" x="19.304" y="-252.984" size="1.778" layer="96"/>
 </instance>
-=======
-<instance part="FID1" gate="G$1" x="312.42" y="-327.66"/>
-<instance part="FID2" gate="G$1" x="317.5" y="-327.66"/>
->>>>>>> 76d3d5c328c166ee66574d6e0980eecbfa513a33
+<instance part="FID1" gate="G$1" x="396.24" y="-340.36"/>
+<instance part="FID2" gate="G$1" x="396.24" y="-335.28"/>
 </instances>
 <busses>
 </busses>
