@@ -4059,6 +4059,20 @@ We've spent an enormous amount of time creating and checking these footprints an
 <text x="0" y="2.54" size="1.778" layer="27">http://creativecommons.org/licenses/by-sa/3.0</text>
 <text x="11.43" y="0" size="1.778" layer="27">Designed by:</text>
 </package>
+<package name="FIDUCIAL-1.5X3">
+<circle x="0" y="0" radius="0.9055" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1X2">
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-1X2.5">
+<circle x="0" y="0" radius="0.9" width="1.27" layer="29"/>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="MICRO-FIDUCIAL">
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DOCFIELD">
@@ -4099,6 +4113,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="431.8" y1="279.4" x2="431.8" y2="0" width="0.4064" layer="94"/>
 <wire x1="431.8" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
 </symbol>
+<symbol name="FIDUCIAL">
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-LEDGER" prefix="FRAME">
@@ -4110,6 +4129,35 @@ Standard 11x14 US Ledger frame</description>
 </gates>
 <devices>
 <device name="" package="CREATIVE_COMMONS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="FID">
+<description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
+Various fiducial points for machine vision alignment.</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1.5X3" package="FIDUCIAL-1.5X3">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X2.5" package="FIDUCIAL-1X2.5">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UFIDUCIAL" package="MICRO-FIDUCIAL">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -7100,9 +7148,14 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <part name="Q5" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="MMBT2222A"/>
 <part name="U10" library="SparkFun-Sensors" deviceset="LIGHTSENSOR" device="ALS"/>
 <part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
+<<<<<<< HEAD
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="GND37" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+20" library="SparkFun" deviceset="VCC" device=""/>
+=======
+<part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+>>>>>>> 76d3d5c328c166ee66574d6e0980eecbfa513a33
 </parts>
 <sheets>
 <sheet>
@@ -7377,11 +7430,16 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <instance part="Q5" gate="G$1" x="266.7" y="-279.4"/>
 <instance part="U10" gate="G$1" x="210.82" y="-185.42"/>
 <instance part="D5" gate="G$1" x="302.26" y="-187.96" rot="R180"/>
+<<<<<<< HEAD
 <instance part="J1" gate="G$1" x="5.08" y="-261.62"/>
 <instance part="GND37" gate="1" x="20.32" y="-274.32"/>
 <instance part="P+20" gate="1" x="20.32" y="-256.54" smashed="yes">
 <attribute name="VALUE" x="19.304" y="-252.984" size="1.778" layer="96"/>
 </instance>
+=======
+<instance part="FID1" gate="G$1" x="312.42" y="-327.66"/>
+<instance part="FID2" gate="G$1" x="317.5" y="-327.66"/>
+>>>>>>> 76d3d5c328c166ee66574d6e0980eecbfa513a33
 </instances>
 <busses>
 </busses>
