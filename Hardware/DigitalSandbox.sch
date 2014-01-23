@@ -7143,11 +7143,11 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <part name="GND34" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND35" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND36" library="SparkFun" deviceset="GND" device=""/>
-<part name="Q3" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="MMBT2222A"/>
-<part name="Q4" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="MMBT2222A"/>
-<part name="Q5" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="MMBT2222A"/>
-<part name="U10" library="SparkFun-Sensors" deviceset="LIGHTSENSOR" device="ALS"/>
-<part name="D5" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
+<part name="Q3" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="TRANS-11480"/>
+<part name="Q4" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="TRANS-11480"/>
+<part name="Q5" library="SparkFun-DiscreteSemi" deviceset="TRANSISTOR_NPN" device="MMBT2222A" value="TRANS-11480"/>
+<part name="U6" library="SparkFun-Sensors" deviceset="LIGHTSENSOR" device="ALS"/>
+<part name="D4" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="SOD"/>
 <part name="J1" library="SparkFun-Connectors" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="GND37" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+20" library="SparkFun" deviceset="VCC" device=""/>
@@ -7425,8 +7425,8 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <instance part="Q3" gate="G$1" x="254" y="86.36"/>
 <instance part="Q4" gate="G$1" x="271.78" y="86.36"/>
 <instance part="Q5" gate="G$1" x="289.56" y="86.36"/>
-<instance part="U10" gate="G$1" x="233.68" y="180.34"/>
-<instance part="D5" gate="G$1" x="325.12" y="177.8" rot="R180"/>
+<instance part="U6" gate="G$1" x="233.68" y="180.34"/>
+<instance part="D4" gate="G$1" x="325.12" y="177.8" rot="R180"/>
 <instance part="J1" gate="G$1" x="27.94" y="104.14"/>
 <instance part="GND37" gate="1" x="43.18" y="91.44"/>
 <instance part="P+20" gate="1" x="43.18" y="109.22" smashed="yes">
@@ -7749,7 +7749,7 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <segment>
 <wire x1="236.22" y1="187.96" x2="236.22" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="P+14" gate="1" pin="VCC"/>
-<pinref part="U10" gate="G$1" pin="C1"/>
+<pinref part="U6" gate="G$1" pin="C1"/>
 </segment>
 <segment>
 <wire x1="147.32" y1="185.42" x2="149.86" y2="185.42" width="0.1524" layer="91"/>
@@ -8125,7 +8125,7 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <pinref part="R22" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="177.8" x2="294.64" y2="177.8" width="0.1524" layer="91"/>
 <label x="294.64" y="177.8" size="2.54" layer="95" rot="R180" xref="yes"/>
-<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="D4" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="D2" class="0">
@@ -8227,7 +8227,7 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <junction x="236.22" y="172.72"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <label x="241.3" y="172.72" size="2.54" layer="95" xref="yes"/>
-<pinref part="U10" gate="G$1" pin="E1"/>
+<pinref part="U6" gate="G$1" pin="E1"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -8430,7 +8430,7 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <junction x="330.2" y="177.8"/>
 <pinref part="U8" gate="G$1" pin="-IN1"/>
 <pinref part="U8" gate="G$1" pin="OUT1"/>
-<pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="D4" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$26" class="0">

@@ -11621,19 +11621,19 @@ design rules under a new name.</description>
 <element name="C7" library="SparkFun" package="0603-CAP" value="0.1uF" x="29.21" y="61.468" rot="R90"/>
 <element name="F1" library="SparkFun-PowerIC" package="PTC-1206" value="PTCSMD" x="90.932" y="12.7"/>
 <element name="F2" library="SparkFun-PowerIC" package="PTC-1206" value="PTCSMD" x="31.242" y="64.008" rot="R270"/>
-<element name="Q3" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MMBT2222A" x="56.896" y="31.242" rot="R270">
+<element name="Q3" library="SparkFun-DiscreteSemi" package="SOT23-3" value="TRANS-11480" x="56.896" y="31.242" rot="R270">
 <attribute name="PROD_ID" value="TRANS-08049" x="56.896" y="31.242" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="Q4" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MMBT2222A" x="57.404" y="24.13" rot="R90">
+<element name="Q4" library="SparkFun-DiscreteSemi" package="SOT23-3" value="TRANS-11480" x="57.404" y="24.13" rot="R90">
 <attribute name="PROD_ID" value="TRANS-08049" x="57.404" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="Q5" library="SparkFun-DiscreteSemi" package="SOT23-3" value="MMBT2222A" x="60.706" y="24.13" rot="R270">
+<element name="Q5" library="SparkFun-DiscreteSemi" package="SOT23-3" value="TRANS-11480" x="60.706" y="24.13" rot="R270">
 <attribute name="PROD_ID" value="TRANS-08049" x="60.706" y="24.13" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U10" library="SparkFun-Sensors" package="ALS-PT19" value="LIGHTSENSORALS" x="58.674" y="54.61" rot="R270">
+<element name="U6" library="SparkFun-Sensors" package="ALS-PT19" value="LIGHTSENSORALS" x="58.674" y="54.61" rot="R270">
 <attribute name="PROD_ID" value="IC-11836" x="58.674" y="54.61" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="D5" library="SparkFun-DiscreteSemi" package="SOD-323" value="" x="82.042" y="48.768" rot="R270">
+<element name="D4" library="SparkFun-DiscreteSemi" package="SOD-323" value="" x="82.042" y="48.768" rot="R270">
 <attribute name="PROD_ID" value="DIO-09646" x="82.042" y="48.768" size="0.8128" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
 <element name="J1" library="SparkFun-Connectors" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="3.81" y="43.18" rot="R270"/>
@@ -11918,7 +11918,7 @@ design rules under a new name.</description>
 <wire x1="71.392" y1="3.048" x2="67.423" y2="7.017" width="0.6096" layer="16"/>
 <wire x1="22.098" y1="3.048" x2="63.454" y2="3.048" width="0.6096" layer="16"/>
 <wire x1="63.454" y1="3.048" x2="67.423" y2="7.017" width="0.6096" layer="16"/>
-<contactref element="U10" pad="C"/>
+<contactref element="U6" pad="C"/>
 <wire x1="59.436" y1="56.896" x2="59.436" y2="56.122" width="0.254" layer="1"/>
 <wire x1="59.436" y1="56.122" x2="58.674" y2="55.36" width="0.254" layer="1"/>
 <contactref element="J1" pad="2"/>
@@ -12334,7 +12334,7 @@ design rules under a new name.</description>
 <wire x1="83.176" y1="37.855" x2="83.176" y2="36.059" width="0.254" layer="1"/>
 <wire x1="83.176" y1="36.059" x2="81.661" y2="34.544" width="0.254" layer="1" curve="-90"/>
 <wire x1="81.661" y1="34.544" x2="74.396471875" y2="34.544" width="0.254" layer="1"/>
-<contactref element="D5" pad="1"/>
+<contactref element="D4" pad="1"/>
 <wire x1="83.908" y1="49.784" x2="83.312" y2="49.784" width="0.254" layer="1"/>
 <wire x1="83.176" y1="49.784" x2="82.176" y2="49.784" width="0.254" layer="1"/>
 <wire x1="82.176" y1="49.784" x2="82.042" y2="49.918" width="0.254" layer="1"/>
@@ -12506,7 +12506,7 @@ design rules under a new name.</description>
 <wire x1="56.6472875" y1="42.672" x2="58.674" y2="42.672" width="0.254" layer="1"/>
 <wire x1="58.674" y1="42.672" x2="59.182" y2="43.18" width="0.254" layer="1"/>
 <wire x1="59.182" y1="43.18" x2="59.182" y2="53.352" width="0.254" layer="1"/>
-<contactref element="U10" pad="E"/>
+<contactref element="U6" pad="E"/>
 <wire x1="59.182" y1="53.352" x2="58.674" y2="53.86" width="0.254" layer="1"/>
 <wire x1="58.674" y1="53.86" x2="60.225" y2="53.86" width="0.254" layer="1"/>
 <wire x1="60.225" y1="53.86" x2="60.325" y2="53.76" width="0.254" layer="1"/>
@@ -12678,7 +12678,7 @@ design rules under a new name.</description>
 <contactref element="U8" pad="1"/>
 <wire x1="80.6958" y1="57.023" x2="80.6958" y2="58.293" width="0.254" layer="1"/>
 <wire x1="80.6958" y1="57.023" x2="79.375" y2="57.023" width="0.254" layer="1"/>
-<contactref element="D5" pad="2"/>
+<contactref element="D4" pad="2"/>
 <wire x1="79.375" y1="57.023" x2="78.486" y2="56.134" width="0.254" layer="1"/>
 <wire x1="78.486" y1="56.134" x2="78.486" y2="50.546" width="0.254" layer="1"/>
 <wire x1="78.486" y1="50.546" x2="81.414" y2="47.618" width="0.254" layer="1"/>
