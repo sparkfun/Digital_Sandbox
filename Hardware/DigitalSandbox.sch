@@ -7697,7 +7697,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="345.44" y1="139.7" x2="317.5" y2="139.7" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="345.44" y1="86.36" x2="345.44" y2="139.7" width="0.4064" layer="97" style="shortdash"/>
 <wire x1="345.44" y1="86.36" x2="317.5" y2="86.36" width="0.4064" layer="97" style="shortdash"/>
-<text x="421.64" y="7.62" size="2.54" layer="94" font="vector">v03</text>
+<text x="421.64" y="7.62" size="2.54" layer="94" font="vector">v10</text>
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="71.12" y="154.94" smashed="yes">

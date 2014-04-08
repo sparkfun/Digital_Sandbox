@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -130,7 +130,7 @@
 <wire x1="7.4422" y1="20.955" x2="11.8618" y2="28.575" width="0.2032" layer="20"/>
 <wire x1="33.528" y1="19.05" x2="8.5598" y2="19.05" width="0.2032" layer="20"/>
 <wire x1="42.8752" y1="27.305" x2="38.481" y2="19.685" width="0.2032" layer="20"/>
-<wire x1="16.9164" y1="29.21" x2="41.783" y2="29.21" width="0.2032" layer="20"/>
+<wire x1="17.0434" y1="29.21" x2="41.783" y2="29.21" width="0.2032" layer="20"/>
 <wire x1="48.9966" y1="35.2552" x2="52.1716" y2="38.4048" width="0.2032" layer="20"/>
 <wire x1="42.5704" y1="35.56" x2="42.291" y2="35.56" width="0.2032" layer="20"/>
 <wire x1="74.4982" y1="33.02" x2="84.074" y2="33.02" width="0.2032" layer="20"/>
@@ -178,7 +178,7 @@
 <wire x1="62.738" y1="19.05" x2="64.933846875" y2="20.31334375" width="0.2032" layer="20" curve="59.826459"/>
 <wire x1="53.1876" y1="20.32" x2="55.3973875" y2="19.0522875" width="0.2032" layer="20" curve="60.257051"/>
 <wire x1="53.1876" y1="20.32" x2="49.53" y2="26.67" width="0.2032" layer="20"/>
-<wire x1="16.9164" y1="33.02" x2="43.6118" y2="33.02" width="0.2032" layer="20"/>
+<wire x1="17.0434" y1="33.02" x2="43.6118" y2="33.02" width="0.2032" layer="20"/>
 <wire x1="58.039" y1="43.18" x2="56.4896" y2="43.18" width="0.2032" layer="20"/>
 <wire x1="86.106" y1="33.02" x2="94.615" y2="33.02" width="0.2032" layer="20"/>
 <wire x1="36.83" y1="67.056" x2="40.259" y2="67.056" width="0.2032" layer="20"/>
@@ -260,7 +260,7 @@
 <wire x1="73.025" y1="12.065" x2="69.85" y2="15.24" width="0.2032" layer="20" curve="90"/>
 <wire x1="83.82" y1="15.24" x2="82.55" y2="13.97" width="0.2032" layer="20" curve="90"/>
 <wire x1="14.605" y1="29.21" x2="14.605" y2="33.02" width="0.2032" layer="20"/>
-<wire x1="16.9164" y1="33.02" x2="16.9164" y2="29.21" width="0.2032" layer="20"/>
+<wire x1="17.0434" y1="33.02" x2="17.0434" y2="29.21" width="0.2032" layer="20"/>
 <wire x1="60.071" y1="67.056" x2="60.071" y2="61.7728" width="0.2032" layer="20"/>
 <wire x1="58.039" y1="61.7728" x2="58.039" y2="67.056" width="0.2032" layer="20"/>
 <wire x1="58.039" y1="43.18" x2="58.039" y2="47.4472" width="0.2032" layer="20"/>
@@ -306,7 +306,7 @@
 <wire x1="2.54" y1="76.2" x2="0" y2="73.66" width="0.2032" layer="20" curve="90"/>
 <wire x1="0" y1="2.54" x2="2.54" y2="0" width="0.2032" layer="20" curve="90"/>
 <text x="48.26" y="-7.62" size="1.778" layer="25">Casey Kuhns</text>
-<text x="103.632" y="0.508" size="1.27" layer="16" font="vector" ratio="20" rot="MR0">v03</text>
+<text x="103.632" y="0.508" size="1.27" layer="16" font="vector" ratio="20" rot="MR0">v10</text>
 <polygon width="0.001" layer="21">
 <vertex x="41.0694" y="68.9322"/>
 <vertex x="41.0494" y="68.9422"/>
@@ -11239,7 +11239,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <class number="1" name="power" width="0.254" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="SparkFun-2-layer">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 The default Design Rules have been set to cover
@@ -11261,10 +11261,10 @@ design rules under a new name.</description>
 <param name="mdSmdSmd" value="8mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
+<param name="mdCopperDimension" value="8mil"/>
 <param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
+<param name="msWidth" value="7mil"/>
 <param name="msDrill" value="15mil"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
@@ -11309,7 +11309,7 @@ design rules under a new name.</description>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
 <param name="checkGrid" value="0"/>
-<param name="checkAngle" value="1"/>
+<param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
