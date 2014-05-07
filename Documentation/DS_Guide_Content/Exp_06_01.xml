@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Experiment>
+<Experiment_Text_Page_01>Experiment 6: Number Storage with Variables</Experiment_Text_Page_01>
+<Experiment_Number_Page_01>6</Experiment_Number_Page_01>
+<Experiment_Text_Page_02>Experiment 6: Number Storage with Variables</Experiment_Text_Page_02>
+<Experiment_Text_Page_03>Experiment 6: Number Storage with Variables</Experiment_Text_Page_03>
+<Experiment_Text_Page_04>Experiment 6: Number Storage with Variables</Experiment_Text_Page_04>
+<Part_1>
+<Description_Title>Number Storage with Variables</Description_Title>
+</Part_1>
+<Part_2>
+<Description_Text>The herky-jerky fading from experiment 4 accomplished the task, but just think of all the values we were missing! How do we make the LED fade smoothly? You can whip out 256 minutely different Set analog pin blocks, or you can reduce it to one using variables.</Description_Text>
+<Background_Information_Title>Background Information</Background_Information_Title>
+<Background_Information_Text>Variables are like storage containers for numbers. We can put any number in a variable, and either recall it and put it to use, or manipulate it to change the value it stores. Anywhere you stick a literal number (like “0” or “255”) you can instead use a variable.
+There are a few rules when it comes to creating a variable. They can be any word, but they must begin with a letter, and they can’t have spaces (use “_” instead). They are case sensitive, so a variable named “fade” isn’t the same variable as “Fade”. Try to keep variables short, but use descriptive words to keep your code legible.</Background_Information_Text>
+</Part_2>
+<Part_3>
+<Code_Components_Title>Code Components</Code_Components_Title>
+<Code_Components_Text>Thanks to variables, here are all the blocks we need to create a smooth fade:
+There are a few new blocks to familiarize yourself with this time:
+Number Variable Name: These blocks are about the same size and shape as literal number blocks we’ve been using. But, instead of writing a number in these blocks, you type in the name for your variable. (Make sure it’s spelled the same in every place you want to reference it!) You can find this block under the Variables/Constants bin on the left.
+Set Number Variable: This block, also found under the Variables/Constants bin, is used to set a variable to a specific value. Two blocks snap to this one – a variable name on top, and the value you want to set that variable to on the bottom. The value can be a literal number, another variable, or the result of a mathematical operator.
+Math operator block: If you click on the Math Operators bin, and look at the first four entries, you should see some very familiar symbols: +, −, ×, and ÷. These math operators can be used to do math on a pair of variables, numbers, or a combination of the two.</Code_Components_Text>
+</Part_3>
+<Program>program</Program>
+<Setup>setup</Setup>
+<Loop>loop</Loop>
+<Set_Number_Variable>set number variable</Set_Number_Variable>
+<Variable>variable</Variable>
+<Value>value</Value>
+<Variable_Name_01>fade</Variable_Name_01>
+<Math_Operator>+</Math_Operator>
+<Set_Analog_Pin>set analog pin</Set_Analog_Pin>
+<Sign>#</Sign>
+<Pin_01>5</Pin_01>
+<Number_01>0</Number_01>
+<Number_02>1</Number_02>
+<Delay>delay milliseconds</Delay>
+<Milliseconds_01>500</Milliseconds_01>
+<Part_4>
+<Do_This_Title>Do This</Do_This_Title>
+<Do_This_Text>Add the first Set Variable Number block, which will include a blank variable and a value. Click into the number variable name and write “fade” into it. The “fade” variable will keep track of the the brightness of our LED. The Set Variable Number block in the setup area of the program should set the “fade” variable to 0.
+You should be plenty familiar with Set Analog Pin and Delay Milliseconds, grab those blocks and stick them in the loop in either order.
+We’ll need to throw away the value block that comes with Set Analog Pin (drag it over to the left side of the window) and replace it with a variable. To add a variable to your sketch, drag over the Number Variable Name block and type your variable’s name into it. Alternatively, once you’ve made one variable, you can right-click it and clone it to get more of the “fade” variables you’ll need.
+Finally, add another Set Number Variable block, and replace the 0 value it includes with a + operator. Modify it so it adds a 1 to “fade”, and plug it into the value part of the Set Number Variable block. Then stick that block group at the end of the loop.
+Whew! Let’s see what all that work was for by uploading the drawing. The LED on pin 5 should satisfyingly and smoothly flow from fully off to fully on.</Do_This_Text>
+<Further_Explorations_Title>Further Explorations</Further_Explorations_Title>
+<Further_Explorations_Text>Does it matter what order you have the loop blocks in?
+Can you make other LEDs fade? How about more than one fading at the same time?
+Can you make the LED fade from HIGH to LOW? (Hint: You may need to change the setup value of “fade”, and change the + to a −.)</Further_Explorations_Text>
+</Part_4>
+</Experiment>

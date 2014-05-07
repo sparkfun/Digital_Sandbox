@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Experiment>
+<Experiment_Text_Page_01>Experiment 9: Serial Calculator</Experiment_Text_Page_01>
+<Experiment_Number_Page_01>9</Experiment_Number_Page_01>
+<Experiment_Text_Page_02>Experiment 9: Serial Calculator</Experiment_Text_Page_02>
+<Experiment_Text_Page_03>Experiment 9: Serial Calculator</Experiment_Text_Page_03>
+<Experiment_Text_Page_04>Experiment 9: Serial Calculator</Experiment_Text_Page_04>
+<Part_1>
+<Description_Title>Serial Calculator</Description_Title>
+</Part_1>
+<Part_2>
+<Description_Text>While you probably can’t have a very stimulating conversation with the Digital Sandbox, it can send you some very interesting information. It’s great at math, so let’s have the Sandbox do some calculating for us! Trouble is, how do we get it to print numbers (without Morse code)? Enter serial communication!</Description_Text>
+<Background_Information_Title>Background Information</Background_Information_Title>
+<Background_Information_Text>Serial communication is a form of data transmission where we can send a string of 1’s and 0’s between two devices which actually form a set of characters. So 01101000 01100101 01101100 01101100 01101111 00101100 00100000 01110111 01101111 01110010 01101100 01100100 becomes “Hello, world”.
+With serial we can send actual text from the Sandbox and display it on our computer using the Serial Monitor.</Background_Information_Text>
+</Part_2>
+<Part_3>
+<Code_Components_Title>Code Components</Code_Components_Title>
+<Code_Components_Text>Here is the layout for this experiment:
+There are two new blocks this time, both of them shaded white and located under the communication bin:
+Serial Print: This block takes two parameters. At the top, place the message you want to print. You can put anything you want into the message block (even spaces!). If you want to add a variable or number, you’ll need to add some glue. The bottom snap of Serial Print determines if a new line is printed after the message. Usually you’ll want this to be set to true.
+Glue: Glue blocks allow you to print values like variables or numbers – anything that isn’t a message that you’ve written in. If you want to print a variable, you’ll need to add a glue block between the variable and the Serial Print block. There are three different kinds of glue blocks, each with a different snap shape on the right. This time we’ll use the block with a wedge (&lt;) termination.</Code_Components_Text>
+</Part_3>
+<Program>program</Program>
+<Setup>setup</Setup>
+<Loop>loop</Loop>
+<Communication_01>serial print</Communication_01>
+<Message>message2</Message>
+<New_Line>new line</New_Line>
+<Custom_Message_01>Powers of 2!</Custom_Message_01>
+<Custom_Message_02>glue</Custom_Message_02>
+<Set_Number_Variable>set number variable</Set_Number_Variable>
+<Variable>variable</Variable>
+<Value>value</Value>
+<Variable_Name_01>true</Variable_Name_01>
+<Variable_Name_02>multiplier</Variable_Name_02>
+<Digital_Pin>digital pin #</Digital_Pin>
+<If>if</If>
+<Test>test</Test>
+<Then>then</Then>
+<Math_Operator_01>x</Math_Operator_01>
+<Logical_Operator_01>==</Logical_Operator_01>
+<Pin_01>12</Pin_01>
+<Number_01>1</Number_01>
+<Number_02>2</Number_02>
+<Number_03>250</Number_03>
+<Digital_value_01>HIGH</Digital_value_01>
+<Delay>delay milliseconds</Delay>
+<Milliseconds_01>250</Milliseconds_01>
+<Part_4>
+<Do_This_Title>Do This</Do_This_Title>
+<Do_This_Text>At the very beginning of our sketch, we want to print a friendly message. How about a short description of what our calculator is going to do: “Powers of 2!”. Then setup a variable that we can do some math on, starting at 1.
+In the loop, we only want to do math and print when the button is pressed. So, begin by adding an if block to check if pin 12 is HIGH (button is pressed). If the button is pressed, we’ll do our math and print out the result. To print a variable, we need to “glue” it to the Serial Print block with a wedge-shaped glue piece. Make your drawing match the one above.
+With that, upload the sketch to your Sandbox. Then, to view the serial prints, click on the Serial Monitor button up top. You’ll see your message printed. Now press the D2 button to start calculating.</Do_This_Text>
+<Further_Explorations_Title>Further Explorations</Further_Explorations_Title>
+<Further_Explorations_Text>Something funny happens when the power of 2 gets past 16834, and then turns to -32768, and then turns to 0. This is because our variable has reached it’s maximum value, and, in a sense, gotten confused. Can you add an if statement to catch an out of bounds multiplier variable and reset it?
+Try some of the other mathematical operators. You’re probably familiar with +, −, ×, and ÷, but what does the % operator do?</Further_Explorations_Text>
+</Part_4>
+</Experiment>

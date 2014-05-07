@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Intro>
+<Index_Page_01>Index</Index_Page_01>
+<Index>
+<Welcome_Title>Welcome to the Digital Sandbox!</Welcome_Title>
+<Welcome_Text>This guide, partnered with the Digital Sandbox, helps to introduce fundamental concepts of both programming and electronics. Using ArduBlock – a simple, graphical version of the popular Arduino programming language – you will program 13 experiments that progressively explore subjects like digital inputs, analog outputs, serial communication and more. The experiments are project-based, with goals of inspiring inventions like reaction-testing games, automatic night lights, adjustable volume meters, and more.</Welcome_Text>
+<Anatomy_section>The Anatomy of the Digital Sandbox</Anatomy_section>
+<Setup_Page_Section>Digital Sandbox Base Plate Setup</Setup_Page_Section>
+<Setup_section>Setting up Arduino and ArduBlock</Setup_section>
+<Exp00_section>Experiment 0: Setup, Loop, and Blink</Exp00_section>
+<Exp01_section>Experiment 1: Exploring Blink</Exp01_section>
+<Exp02_section>Experiment 2: Multi-Blink</Exp02_section>
+<Exp03_section>Experiment 3: Dimming (the Hard Way)</Exp03_section>
+<Exp04_section>Experiment 4: Dimming (the Easy Way)</Exp04_section>
+<Exp05_section>Experiment 5: Color Mixing</Exp05_section>
+<Exp06_section>Experiment 6: Number Storage with Variables</Exp06_section>
+<Exp07_section>Experiment 7: If This Then That</Exp07_section>
+<Exp08_section>Experiment 8: The Reaction Tester</Exp08_section>
+<Exp09_section>Experiment 9: Serial Calculator</Exp09_section>
+<Exp10_section>Experiment 10: Do the Analog Slide</Exp10_section>
+<Exp11_section>Experiment 11: Automatic Night Light</Exp11_section>
+<Exp12_section>Experiment 12: Thermal Alert!</Exp12_section>
+<Exp13_section>Experiment 13: Sound Detecting</Exp13_section>
+<Exp14_section>Experiment 14: Opto-Theremin</Exp14_section>
+<Exp15_section>Experiment 15: Serial Motoring</Exp15_section>
+<Exp16_section>Experiment 16: Servo Sweeper</Exp16_section>
+</Index>
+<Anatomy_Page_01>The Anatomy of the Digital Sandbox</Anatomy_Page_01>
+<Anatomy_Page_02>The Anatomy of the Digital Sandbox</Anatomy_Page_02>
+<Anatomy_Title>The Anatomy of the Digital Sandbox</Anatomy_Title>
+<Anatomy_Text>
+<Part_01_Title>USB Mini-B SMD Connector</Part_01_Title>
+<Part_01_Text>Used to connect to your computer.</Part_01_Text>
+<Part_02_Title>JST Right Angle Connector</Part_02_Title>
+<Part_02_Text>Used for power supply to the board.</Part_02_Text>
+<Part_03_Title>Switch for Charging</Part_03_Title>
+<Part_03_Text>Power the Digital Sandbox through the JST connector.</Part_03_Text>
+<Part_04_Title>LEDs</Part_04_Title>
+<Part_04_Text>Power the Digital Sandbox through the JST connector.</Part_04_Text>
+<Part_05_Title>Temperature Sensor</Part_05_Title>
+<Part_05_Text>Power the Digital Sandbox through the JST connector.</Part_05_Text>
+<Part_06_Title>RGB LED</Part_06_Title>
+<Part_06_Text>Power the Digital Sandbox through the JST connector.</Part_06_Text>
+<Part_07_Title>Light Sensor</Part_07_Title>
+<Part_07_Text>Power the Digital Sandbox through the JST connector.</Part_07_Text>
+<Part_08_Title>Speaker</Part_08_Title>
+<Part_08_Text>Power the Digital Sandbox through the JST connector.</Part_08_Text>
+<Part_09_Title>Button</Part_09_Title>
+<Part_09_Text>Power the Digital Sandbox through the JST connector.</Part_09_Text>
+<Part_10_Title>Slider</Part_10_Title>
+<Part_10_Text>Power the Digital Sandbox through the JST connector.</Part_10_Text>
+<Part_11_Title>Add-on Header</Part_11_Title>
+<Part_11_Text>Power the Digital Sandbox through the JST connector.</Part_11_Text>
+<Part_12_Title>Reset Button</Part_12_Title>
+<Part_12_Text>Power the Digital Sandbox through the JST connector.</Part_12_Text>
+</Anatomy_Text>
+<Setup_Page_Title_01>Digital Sandbox Base Plate Setup</Setup_Page_Title_01>
+<Setup_Base_Plate>
+<Setup_Title>Secure the Digital Sandbox board to the base plate</Setup_Title>
+<Setup_Page_Text>The Digital Sandbox board can be attached with the included phillips-head screws for easy removal later.</Setup_Page_Text>
+</Setup_Base_Plate>
+<Setting_Up>
+<Setting_Up_Page_01>Setting up Arduino and ArduBlock</Setting_Up_Page_01>
+<Setting_Up_Page_02>Setting up Arduino and ArduBlock</Setting_Up_Page_02>
+<Download_Title>Download the Arduino/ArduBlock Combo</Download_Title>
+<Download_Text>Arduino and ArduBlock are available for all popular operating system flavors. Make sure you grab the version that matches your operating system:
+Windows (ZIP File)
+Mac OS X
+The Arduino software comes packaged in an archived .ZIP format. Once you’ve downloaded the ZIP file, you’ll need to extract it. Mac users should move the Arduino application into the Applications folder, and Windows users can move the Arduino folder to a preferred location as well.</Download_Text>
+<Install_Drivers_Title>Install Drivers</Install_Drivers_Title>
+<Install_Drivers_Text>Once you have downloaded and extracted the Arduino software connect the Digital Sandbox to your computer.
+Image of board connected to computer
+Once the board is connected, you will need to install drivers. Please go to https://learn.sparkfun.com/tutorials/how-to-install-ftdi-drivers for instructions specific to your operating system.</Install_Drivers_Text>
+<Open_Arduino_And_ArduBlock_Title>Open Arduino and ArduBlock</Open_Arduino_And_ArduBlock_Title>
+<Open_Arduino_And_ArduBlock_Text>ArduBlock is an addon that exists inside the Arduino software. To open it up, first open the Arduino IDE. Windows users should run Arduino.exe, Mac users can run the Arduino application.
+Let’s do some preparation before opening ArduBlock. First, go to the Tools menu, hover over Board and select Digital SandBox.
+Tools > Board > Digital Sandbox
+Next, go back to the Tools menu, hover over Serial Port and select the serial port number that matches your Sandbox board.
+Add serial port select image similar to SIK guide
+Finally, to open ArduBlock, go to Tools and select ArduBlock.
+Tools > ArduBlock
+What opens next is the ArduBlock interface. Make sure the Arduino window remains running in the background. If you close that, ArduBlock will close as well.
+Image of ArduBlock interface
+Note: If you don’t see ArduBlock under the Tools menu, you may need to manually install it. Please visit ??? for help adding ArduBlock to a previous Arduino installation.</Open_Arduino_And_ArduBlock_Text>
+</Setting_Up>
+</Intro>

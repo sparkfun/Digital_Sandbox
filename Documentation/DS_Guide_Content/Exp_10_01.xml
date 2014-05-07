@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Experiment>
+<Experiment_Text_Page_01>Experiment 10: Do the Analog Slide</Experiment_Text_Page_01>
+<Experiment_Number_Page_01>10</Experiment_Number_Page_01>
+<Experiment_Text_Page_02>Experiment 10: Do the Analog Slide</Experiment_Text_Page_02>
+<Experiment_Text_Page_03>Experiment 10: Do the Analog Slide</Experiment_Text_Page_03>
+<Experiment_Text_Page_04>Experiment 10: Do the Analog Slide</Experiment_Text_Page_04>
+<Part_1>
+<Description_Title>Do the Analog Slide</Description_Title>
+</Part_1>
+<Part_2>
+<Description_Text>Digital inputs, like the button, only allow for two input values: HIGH or LOW. But what about the in-betweens? When you turn the volume up on your stereo, you’re not forced to pick between mute and OMG MY EARS. For volume control, and other “finely-tuned” settings, we need analog inputs.</Description_Text>
+<Background_Information_Title>Background Information</Background_Information_Title>
+<Background_Information_Text>Analog inputs are components that put data into a system with a range of more than two values. On the Digital Sandbox, analog inputs can produce a value anywhere between 0 and 1023 (1024 total values). The value produced by an analog input is proportional to the voltage it produces. If an analog component reads a value of 0, the voltage is 0V. If the output value is 1023, then the voltage is 5V. An analog reading of 512 is about 2.5V, and so on.
+A special component inside the Sandbox’s microcontroller called an analog-to-digital converter (ADC) is able to convert that range of input voltages to a discrete number. This is a special circuit that most pins on the Sandbox don’t have. It’s so special that the ADC pins are labeled with a preceding ‘A’. The analog sensors on the board are labeled as “A0”, “A1”, “A2” and “A3”.
+Many electronic components produce analog output, the most common of which is a potentiometer. “Pots” come in a variety of shapes and sizes. Rotary pots are very commonly used to adjust the volume on a stereo. Slide potentiometers, like that on the bottom of the Sandbox, are often seen adjusting sound levels on mixing boards.</Background_Information_Text>
+</Part_2>
+<Part_3>
+<Code_Components_Title>Code Components</Code_Components_Title>
+<Code_Components_Text>Whew, after that last experiment it’s time for an easy drawing:
+Analog Pin #: Like the Digital Pin block, this block reads in the value of an input. But, instead of producing either true or false (1/0, HIGH/LOW), this block produces a number between 0 and 1024. The pink block snapped to the right of this one indicates which analog pin should be read.
+</Code_Components_Text>
+<Program>program</Program>
+<Setup>setup</Setup>
+<Loop>loop</Loop>
+<Communication_01>serial print</Communication_01>
+<Message>message2</Message>
+<New_Line>new line</New_Line>
+<Custom_Message_01>glue</Custom_Message_01>
+<Variable_Name_01>true</Variable_Name_01>
+<Analog_Pin>analog pin #</Analog_Pin>
+<Pin_01>3</Pin_01>
+<Number_01>3</Number_01>
+<Delay>delay milliseconds</Delay>
+<Milliseconds_01>100</Milliseconds_01>
+</Part_3>
+<Part_4>
+<Do_This_Title>Do This</Do_This_Title>
+<Do_This_Text>Construct the block drawing as shown above. Then upload and open the serial monitor.
+Every 100ms an analog input value should be printed. Move the analog slider to adjust the value. Can you make the output 0? 1023? 512? Take note of which slide pot position relates to which value.
+</Do_This_Text>
+<Further_Explorations_Title>Further Explorations</Further_Explorations_Title>
+<Further_Explorations_Text>Can you make the slider control the LEDs? You could slide the white LEDs back and forth, or try controlling the brightness of the RGB LEDs with the slider.
+Why are there only 1024 output values? Why not an even 1000? (Hint: 210.)</Further_Explorations_Text>
+</Part_4>
+</Experiment>

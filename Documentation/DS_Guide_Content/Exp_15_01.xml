@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Experiment>
+<Experiment_Text_Page_01>Experiment 15: Serial Motoring (Addon)</Experiment_Text_Page_01>
+<Experiment_Number_Page_01>15</Experiment_Number_Page_01>
+<Experiment_Text_Page_02>Experiment 15: Serial Motoring (Addon)</Experiment_Text_Page_02>
+<Experiment_Text_Page_03>Experiment 15: Serial Motoring (Addon)</Experiment_Text_Page_03>
+<Experiment_Text_Page_04>Experiment 15: Serial Motoring (Addon)</Experiment_Text_Page_04>
+<Part_1>
+<Description_Title>Serial Motoring (Addon)</Description_Title>
+</Part_1>
+<Part_2>
+<Description_Text>Motors make the world go round. Well, not literally, but they make a lot things we use every day spin and actuate. There are tiny vibration motors in cell phones, speedy motors that spin CD and Blu-Ray discs, and, of course, massive engine motors that help propel our cars. In this experiment we’ll explore one of the most fundamental motor types out there: DC motors. And we’ll tell the Sandbox precisely how fast we want the motor to spin.</Description_Text>
+<Background_Information_Title>Background Information</Background_Information_Title>
+<Background_Information_Text>A DC motor turns electrical energy into a rotational, mechanical energy. DC motors are popular because they’re very simple to control – give them some voltage and they spin. You can control the speed of a motor much as you might control the intensity of an LED – with PWM – so in this experiment, we’ll be using the analog output block to control the motor’s speed.
+This experiment also introduces serial input. Up to this point our conversations with the Sandbox have been very one-sided – the Sandbox has been outputting data to the serial monitor. Serial input allows us to send data to the Sandbox via the serial monitor.</Background_Information_Text>
+</Part_2>
+<Part_3>
+<Code_Components_Title>Code Components</Code_Components_Title>
+<Code_Components_Text>Here is the diagram for this program. The Set Analog Pin blocks are used to control the motor, and a speed variable is used to keep track of the motor speed. A few new blocks, related to serial communication, are introduced.
+Serial Read: We’ll use this block to put serial data into the Sandbox. The Serial Read block is like a number variable, but instead of using a Set Number Variable block to set it, we use the Serial Monitor. This block will store the integer most recently sent to the Sandbox from the Serial Monitor.
+Data Available: This block keeps track of whether or not any serial data is available. If no serial data has been sent to the Sandbox, this block stores a 0. If data is sent to the Sandbox this block will return a 1. The value of this block will go back to 0 once the serial data has been read (using the Serial Read block).</Code_Components_Text>
+</Part_3>
+<Program>program</Program>
+<Setup>setup</Setup>
+<Loop>loop</Loop>
+<If>if</If>
+<Test>test</Test>
+<Then>then</Then>
+<Set_Analog_Pin>set analog pin</Set_Analog_Pin>
+<Sign>#</Sign>
+<Communication_01>serial println</Communication_01>
+<Communication_02>date available</Communication_02>
+<Communication_03>serial read</Communication_03>
+<Custom_Message_01>Feed me a speed (0-255)</Custom_Message_01>
+<Custom_Message_02>Setting speed to:</Custom_Message_02>
+<Custom_Message_03>glue</Custom_Message_03>
+<Custom_Message_04>Stopping!</Custom_Message_04>
+<Communication_01>serial println</Communication_01>
+<Custom_Message_01>glue</Custom_Message_01>
+<Set_Number_Variable>set number variable</Set_Number_Variable>
+<Variable>variable</Variable>
+<Value>value</Value>
+<Variable_Name_01>speed</Variable_Name_01>
+<Constrain>constrain</Constrain>
+<Constrain_Lower>lower</Constrain_Lower>
+<Constrain_Higher>higher</Constrain_Higher>
+<Digital_Pin>digital pin #</Digital_Pin>
+<Pin_01>3</Pin_01>
+<Pin_02>12</Pin_02>
+<Number_01>0</Number_01>
+<Number_02>255</Number_02>
+<Delay>delay milliseconds</Delay>
+<Milliseconds_01>250</Milliseconds_01>
+<Part_4>
+<Do_This_Title>Do This</Do_This_Title>
+<Do_This_Text>Construct the program as shown in the picture, then upload the code. After uploading, connect the motor as shown in this picture:
+Image of motor attached to sandbox
+Now open the Serial Monitor, type a number between 0 and 255 into the box next to “Send”, and then click that button. The Sandbox should respond with a message, and the motor should start spinning.
+What happens when you send 255? How about 0? What happens when you send a number greater than 255 or less than 0 (a negative)? Can you spot a block in the code that is restricting those values?
+As a “safety mechanism”, if you ever need to stop the motor from spinning, press the button to bring it to a halt.</Do_This_Text>
+<Further_Explorations_Title>Further Explorations</Further_Explorations_Title>
+<Further_Explorations_Text>Try connecting something mechanical to the motor. Perhaps tape a narrow piece of paper to create a spinner and play Twister. Or add a few pieces of paper to create a fan. What else can you connect to the axle to take advantage of the rotational motion?
+As a programming challenge, can you make the motor smoothly speed up or down when a new serial value is received?</Further_Explorations_Text>
+</Part_4>
+</Experiment>
