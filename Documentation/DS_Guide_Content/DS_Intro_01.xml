@@ -30,29 +30,33 @@
 <Anatomy_Title>The Anatomy of the Digital Sandbox</Anatomy_Title>
 <Anatomy_Text>
 <Part_01_Title>USB Mini-B SMD Connector</Part_01_Title>
-<Part_01_Text>Used to connect to your computer.</Part_01_Text>
+<Part_01_Text>Used to connect to a computer.</Part_01_Text>
 <Part_02_Title>JST Right Angle Connector</Part_02_Title>
-<Part_02_Text>Used for power supply to the board.</Part_02_Text>
-<Part_03_Title>Switch for Charging</Part_03_Title>
-<Part_03_Text>Power the Digital Sandbox through the JST connector.</Part_03_Text>
-<Part_04_Title>LEDs</Part_04_Title>
-<Part_04_Text>Power the Digital Sandbox through the JST connector.</Part_04_Text>
-<Part_05_Title>Temperature Sensor</Part_05_Title>
-<Part_05_Text>Power the Digital Sandbox through the JST connector.</Part_05_Text>
-<Part_06_Title>RGB LED</Part_06_Title>
-<Part_06_Text>Power the Digital Sandbox through the JST connector.</Part_06_Text>
-<Part_07_Title>Light Sensor</Part_07_Title>
-<Part_07_Text>Power the Digital Sandbox through the JST connector.</Part_07_Text>
-<Part_08_Title>Speaker</Part_08_Title>
-<Part_08_Text>Power the Digital Sandbox through the JST connector.</Part_08_Text>
-<Part_09_Title>Button</Part_09_Title>
-<Part_09_Text>Power the Digital Sandbox through the JST connector.</Part_09_Text>
-<Part_10_Title>Slider</Part_10_Title>
-<Part_10_Text>Power the Digital Sandbox through the JST connector.</Part_10_Text>
-<Part_11_Title>Add-on Header</Part_11_Title>
-<Part_11_Text>Power the Digital Sandbox through the JST connector.</Part_11_Text>
-<Part_12_Title>Reset Button</Part_12_Title>
-<Part_12_Text>Power the Digital Sandbox through the JST connector.</Part_12_Text>
+<Part_02_Text>Used to supply power to the board.</Part_02_Text>
+<Part_03_Title>Slide Switch for Charging</Part_03_Title>
+<Part_03_Text>Used to charge a Lithium Polymer battery that is plugged into the two pin JST connector while the Digital Sandbox is connected to a computer and the slide switch is in the "ON" position.</Part_03_Text>
+<Part_04_Title>Reset Button</Part_04_Title>
+<Part_04_Text>This is a way to manually reset your Digital Sandbox, which will restart your code from the beginning.</Part_04_Text>
+<Part_05_Title>Slide Switch</Part_05_Title>
+<Part_05_Text>On or off slide switch.</Part_05_Text>
+<Part_06_Title>LEDs (Light-emitting diodes)</Part_06_Title>
+<Part_06_Text>Use one or all the LEDs (D4-D8) to light up your project!</Part_06_Text>
+<Part_07_Title>LED (Pin 13)</Part_07_Title>
+<Part_07_Text>Incorporate into your sketch to show if your program is running properly.</Part_07_Text>
+<Part_08_Title>Temperature Sensor</Part_08_Title>
+<Part_08_Text>Measures ambient temperature.</Part_08_Text>
+<Part_09_Title>Light Sensor</Part_09_Title>
+<Part_09_Text>Measures the amount of light hitting the sensor.</Part_09_Text>
+<Part_10_Title>RGB LED</Part_10_Title>
+<Part_10_Text>RGB, or red-green-blue, LEDs have three different color-emitting diodes that can be combined to create all sorts of colors.</Part_10_Text>
+<Part_11_Title>Slider</Part_11_Title>
+<Part_11_Text>Change the values by sliding back and forth.</Part_11_Text>
+<Part_12_Title>Electret Microphone</Part_12_Title>
+<Part_12_Text>Measures how loud something is.</Part_12_Text>
+<Part_13_Title>Button</Part_13_Title>
+<Part_13_Text>A button is a digital input. It can be either “on” or “off.”</Part_13_Text>
+<Part_14_Title>Add-on Header</Part_14_Title>
+<Part_14_Text>Three pin header for add-ons. Example add-ons are servos, motors, and buzzers.</Part_14_Text>
 </Anatomy_Text>
 <Setup_Page_Title_01>Digital Sandbox Base Plate Setup</Setup_Page_Title_01>
 <Setup_Base_Plate>
@@ -63,7 +67,7 @@
 <Setting_Up_Page_01>Setting up Arduino and ArduBlock</Setting_Up_Page_01>
 <Setting_Up_Page_02>Setting up Arduino and ArduBlock</Setting_Up_Page_02>
 <Download_Title>Download the Arduino/ArduBlock Combo</Download_Title>
-<Download_Text>Arduino and ArduBlock are available for all popular operating system flavors. Make sure you grab the version that matches your operating system:
+<Download_Text>Arduino and ArduBlock are available for all popular operating systems. Make sure you grab the version that matches your operating system:
 Windows (ZIP File)
 Mac OS X
 The Arduino software comes packaged in an archived .ZIP format. Once you’ve downloaded the ZIP file, you’ll need to extract it. Mac users should move the Arduino application into the Applications folder, and Windows users can move the Arduino folder to a preferred location as well.</Download_Text>
