@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="5" fill="1" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,48 +50,23 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="no"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="11" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -74,55 +77,56 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="121" name="_tplace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bplace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="5" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="_tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="no"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="no"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="no"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="no"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="no"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="no"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="no"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="no"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="no" active="no"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="no"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="no"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="no"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="no"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="no"/>
+<layer number="121" name="_tplace" color="14" fill="1" visible="no" active="no"/>
+<layer number="122" name="_bplace" color="14" fill="1" visible="no" active="no"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="no"/>
+<layer number="125" name="_tNames" color="14" fill="1" visible="no" active="no"/>
+<layer number="126" name="_bNames" color="5" fill="1" visible="no" active="no"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="no"/>
+<layer number="151" name="_tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="no"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
-<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="no"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -131,11 +135,19 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="no"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -322,7 +334,7 @@
 <wire x1="2.54" y1="76.2" x2="0" y2="73.66" width="0.2032" layer="20" curve="90"/>
 <wire x1="0" y1="2.54" x2="2.54" y2="0" width="0.2032" layer="20" curve="90"/>
 <text x="48.26" y="-7.62" size="1.778" layer="25">Casey Kuhns</text>
-<text x="99.822" y="0.508" size="1.27" layer="16" font="vector" ratio="20" rot="MR0">v11</text>
+<text x="99.822" y="0.508" size="1.27" layer="16" font="vector" ratio="20" rot="MR0">v12</text>
 <polygon width="0.001" layer="21">
 <vertex x="41.0694" y="68.9322"/>
 <vertex x="41.0494" y="68.9422"/>
@@ -628,19 +640,19 @@
 <vertex x="43.7794" y="69.1722"/>
 <vertex x="43.6794" y="69.0122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="99.8894" y="65.7522"/>
 <vertex x="103.4894" y="65.7522"/>
 <vertex x="103.4894" y="65.3522"/>
 <vertex x="99.8894" y="65.3522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="99.8894" y="60.7422"/>
 <vertex x="103.4894" y="60.7422"/>
 <vertex x="103.4894" y="60.3422"/>
 <vertex x="99.8894" y="60.3422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="100.2894" y="52.0822"/>
 <vertex x="103.4894" y="52.0822"/>
 <vertex x="103.4894" y="52.4822"/>
@@ -648,13 +660,13 @@
 <vertex x="99.8894" y="48.8822"/>
 <vertex x="100.2894" y="48.8822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="95.7894" y="46.0922"/>
 <vertex x="96.1894" y="46.0922"/>
 <vertex x="96.1894" y="46.9722"/>
 <vertex x="95.7894" y="46.9722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="95.7894" y="48.3422"/>
 <vertex x="95.7894" y="46.9722"/>
 <vertex x="96.1894" y="46.9722"/>
@@ -673,13 +685,13 @@
 <vertex x="97.5194" y="47.9422"/>
 <vertex x="97.5194" y="48.3422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="99.3794" y="46.9722"/>
 <vertex x="98.9894" y="46.9722"/>
 <vertex x="98.9894" y="46.3022"/>
 <vertex x="99.3794" y="46.3022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="97.5194" y="48.3422"/>
 <vertex x="97.5194" y="47.9422"/>
 <vertex x="98.6994" y="47.9422"/>
@@ -700,7 +712,7 @@
 <vertex x="99.3794" y="46.9722"/>
 <vertex x="99.3794" y="48.3422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="102.0594" y="69.9222"/>
 <vertex x="99.8894" y="69.9222"/>
 <vertex x="99.8894" y="68.1322"/>
@@ -763,7 +775,7 @@
 <vertex x="100.2894" y="69.5222"/>
 <vertex x="102.0594" y="69.5222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="102.0594" y="69.9222"/>
 <vertex x="102.0594" y="69.5222"/>
 <vertex x="103.0894" y="69.5222"/>
@@ -792,7 +804,7 @@
 <vertex x="103.4894" y="68.0422"/>
 <vertex x="103.4894" y="69.9222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="95.7194" y="58.4022"/>
 <vertex x="96.1294" y="58.4022"/>
 <vertex x="96.1294" y="58.4222"/>
@@ -800,7 +812,7 @@
 <vertex x="96.1194" y="59.2722"/>
 <vertex x="95.7194" y="59.2722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="95.7194" y="60.2522"/>
 <vertex x="95.7194" y="59.2722"/>
 <vertex x="96.1194" y="59.2722"/>
@@ -870,7 +882,7 @@
 <vertex x="99.3094" y="58.2722"/>
 <vertex x="99.3094" y="60.2522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="101.5994" y="61.1822"/>
 <vertex x="101.8894" y="61.1822"/>
 <vertex x="101.8894" y="63.1822"/>
@@ -1067,13 +1079,13 @@
 <vertex x="101.3394" y="61.2122"/>
 <vertex x="101.4194" y="61.2022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="95.7194" y="54.2222"/>
 <vertex x="96.1194" y="54.2222"/>
 <vertex x="96.1194" y="55.5422"/>
 <vertex x="95.7194" y="55.5422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="95.7194" y="56.2522"/>
 <vertex x="95.7194" y="55.5422"/>
 <vertex x="96.1194" y="55.5422"/>
@@ -1176,7 +1188,7 @@
 <vertex x="99.3094" y="53.1522"/>
 <vertex x="99.3094" y="56.2522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="98.3194" y="61.2222"/>
 <vertex x="95.7194" y="61.2222"/>
 <vertex x="95.7194" y="60.8322"/>
@@ -1206,7 +1218,7 @@
 <vertex x="98.4894" y="61.2522"/>
 <vertex x="98.4394" y="61.2422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="98.3094" y="48.9422"/>
 <vertex x="96.7194" y="48.9422"/>
 <vertex x="96.8194" y="48.9022"/>
@@ -1234,7 +1246,7 @@
 <vertex x="98.2194" y="48.9022"/>
 <vertex x="98.2594" y="48.9222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="98.3294" y="48.9522"/>
 <vertex x="98.3294" y="49.4422"/>
 <vertex x="98.2794" y="49.4122"/>
@@ -1308,7 +1320,7 @@
 <vertex x="98.3094" y="48.9422"/>
 <vertex x="98.3094" y="48.9522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="97.5194" y="52.3522"/>
 <vertex x="97.3694" y="52.3422"/>
 <vertex x="97.0894" y="52.3022"/>
@@ -1390,7 +1402,7 @@
 <vertex x="97.8794" y="52.3122"/>
 <vertex x="97.6994" y="52.3422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="95.6994" y="68.2422"/>
 <vertex x="98.4194" y="66.8222"/>
 <vertex x="95.6994" y="65.4022"/>
@@ -1398,7 +1410,7 @@
 <vertex x="99.2794" y="66.8222"/>
 <vertex x="95.6994" y="68.6822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="99.8794" y="56.5722"/>
 <vertex x="99.8794" y="56.1322"/>
 <vertex x="102.5994" y="54.7122"/>
@@ -1408,7 +1420,7 @@
 <vertex x="103.4694" y="54.7122"/>
 <vertex x="99.8894" y="56.5722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="96.5594" y="68.9022"/>
 <vertex x="96.7394" y="68.9022"/>
 <vertex x="96.8294" y="68.9222"/>
@@ -1515,7 +1527,7 @@
 <vertex x="96.4294" y="68.9222"/>
 <vertex x="96.4894" y="68.9122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="53.3224" y="70.2802"/>
 <vertex x="53.1624" y="70.2802"/>
 <vertex x="53.0424" y="70.3202"/>
@@ -1655,7 +1667,7 @@
 <vertex x="53.3724" y="70.2902"/>
 <vertex x="53.3524" y="70.2902"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="54.7724" y="71.5902"/>
 <vertex x="54.7524" y="71.5902"/>
 <vertex x="54.7324" y="71.5702"/>
@@ -1747,7 +1759,7 @@
 <vertex x="54.7424" y="71.2702"/>
 <vertex x="54.7724" y="71.2902"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="54.7724" y="71.5902"/>
 <vertex x="54.7724" y="71.2902"/>
 <vertex x="54.7824" y="71.2902"/>
@@ -1792,7 +1804,7 @@
 <vertex x="54.8224" y="71.6202"/>
 <vertex x="54.7824" y="71.6002"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="56.7524" y="70.0402"/>
 <vertex x="56.7524" y="70.3102"/>
 <vertex x="56.7424" y="70.3002"/>
@@ -1834,7 +1846,7 @@
 <vertex x="56.6924" y="70.0202"/>
 <vertex x="56.7324" y="70.0402"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="56.8124" y="71.6602"/>
 <vertex x="56.6224" y="71.6602"/>
 <vertex x="56.5624" y="71.6502"/>
@@ -1981,7 +1993,7 @@
 <vertex x="57.1124" y="71.6002"/>
 <vertex x="57.0524" y="71.6202"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="58.0724" y="70.0302"/>
 <vertex x="58.0724" y="70.8002"/>
 <vertex x="58.0824" y="70.8502"/>
@@ -2023,7 +2035,7 @@
 <vertex x="57.6424" y="71.5402"/>
 <vertex x="57.6424" y="70.0302"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="59.8724" y="70.0302"/>
 <vertex x="60.4024" y="70.0302"/>
 <vertex x="59.7324" y="71.0302"/>
@@ -2037,7 +2049,7 @@
 <vertex x="59.2724" y="70.5702"/>
 <vertex x="59.4424" y="70.7402"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="60.6724" y="71.7902"/>
 <vertex x="60.6724" y="71.6202"/>
 <vertex x="60.5324" y="71.6202"/>
@@ -2072,7 +2084,7 @@
 <vertex x="60.7424" y="72.0202"/>
 <vertex x="60.7024" y="71.9402"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="62.6024" y="70.2502"/>
 <vertex x="62.6024" y="70.0302"/>
 <vertex x="63.0224" y="70.0302"/>
@@ -2124,7 +2136,7 @@
 <vertex x="62.5524" y="70.1802"/>
 <vertex x="62.5724" y="70.2202"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="64.3224" y="70.9702"/>
 <vertex x="64.3224" y="70.0302"/>
 <vertex x="64.7524" y="70.0302"/>
@@ -2177,7 +2189,7 @@
 <vertex x="64.3124" y="71.0602"/>
 <vertex x="64.3124" y="71.0202"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="101.6394" y="16.9422"/>
 <vertex x="101.9994" y="17.2922"/>
 <vertex x="101.5094" y="17.9922"/>
@@ -2557,7 +2569,7 @@
 <vertex x="84.0414" y="18.8482"/>
 <vertex x="85.3614" y="18.8482"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="38.0374" y="44.3072"/>
 <vertex x="37.6574" y="43.1072"/>
 <vertex x="38.0774" y="43.1072"/>
@@ -2598,7 +2610,7 @@
 <vertex x="38.3774" y="44.2872"/>
 <vertex x="38.3774" y="44.3072"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="38.0374" y="44.3072"/>
 <vertex x="38.3774" y="44.3072"/>
 <vertex x="38.3874" y="44.3272"/>
@@ -2636,7 +2648,7 @@
 <vertex x="38.7174" y="44.9172"/>
 <vertex x="38.2274" y="44.9172"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.0774" y="43.7872"/>
 <vertex x="40.0974" y="43.7972"/>
 <vertex x="40.1374" y="43.7972"/>
@@ -2674,7 +2686,7 @@
 <vertex x="40.0074" y="43.7972"/>
 <vertex x="40.0574" y="43.7972"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1674" y="44.8872"/>
 <vertex x="40.1374" y="44.8872"/>
 <vertex x="40.1374" y="44.8972"/>
@@ -2779,7 +2791,7 @@
 <vertex x="40.1574" y="44.5672"/>
 <vertex x="40.1674" y="44.5672"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1674" y="44.8872"/>
 <vertex x="40.1674" y="44.5672"/>
 <vertex x="40.1874" y="44.5572"/>
@@ -2809,7 +2821,7 @@
 <vertex x="40.3174" y="44.8472"/>
 <vertex x="40.2674" y="44.8672"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="55.8444" y="50.4822"/>
 <vertex x="55.4844" y="49.3022"/>
 <vertex x="55.8944" y="49.3022"/>
@@ -2851,7 +2863,7 @@
 <vertex x="56.1944" y="50.4622"/>
 <vertex x="56.2044" y="50.4822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="55.8444" y="50.4822"/>
 <vertex x="56.2044" y="50.4822"/>
 <vertex x="56.2044" y="50.5022"/>
@@ -2889,7 +2901,7 @@
 <vertex x="56.5344" y="51.1022"/>
 <vertex x="56.0444" y="51.1022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="58.6044" y="49.6222"/>
 <vertex x="58.2044" y="49.6222"/>
 <vertex x="58.2044" y="51.0522"/>
@@ -2913,7 +2925,7 @@
 <vertex x="57.3444" y="49.2922"/>
 <vertex x="58.6044" y="49.2922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="80.1954" y="44.0782"/>
 <vertex x="79.8654" y="43.0382"/>
 <vertex x="80.2854" y="43.0382"/>
@@ -2941,7 +2953,7 @@
 <vertex x="80.5454" y="44.0682"/>
 <vertex x="80.5554" y="44.0782"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="80.1954" y="44.0782"/>
 <vertex x="80.5554" y="44.0782"/>
 <vertex x="80.5554" y="44.0982"/>
@@ -2974,7 +2986,7 @@
 <vertex x="80.9154" y="44.8382"/>
 <vertex x="80.4354" y="44.8382"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="82.3054" y="43.3582"/>
 <vertex x="82.3654" y="43.4082"/>
 <vertex x="82.4354" y="43.4682"/>
@@ -3065,7 +3077,7 @@
 <vertex x="82.4054" y="43.3682"/>
 <vertex x="82.3854" y="43.3582"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="8.2694" y="41.0122"/>
 <vertex x="8.2594" y="41.0122"/>
 <vertex x="8.2594" y="41.0222"/>
@@ -3100,7 +3112,7 @@
 <vertex x="8.2594" y="40.8322"/>
 <vertex x="8.2694" y="40.8322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="8.2694" y="41.0122"/>
 <vertex x="8.2694" y="40.8322"/>
 <vertex x="8.2994" y="40.8322"/>
@@ -3144,7 +3156,7 @@
 <vertex x="8.3694" y="41.0022"/>
 <vertex x="8.3394" y="41.0122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="9.4394" y="40.6322"/>
 <vertex x="9.0694" y="40.6322"/>
 <vertex x="9.0694" y="40.8322"/>
@@ -3158,7 +3170,7 @@
 <vertex x="9.0694" y="40.4422"/>
 <vertex x="9.4394" y="40.4422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="10.1294" y="40.1922"/>
 <vertex x="10.0594" y="40.1922"/>
 <vertex x="10.0394" y="40.2022"/>
@@ -3289,7 +3301,7 @@
 <vertex x="10.1694" y="40.2022"/>
 <vertex x="10.1394" y="40.2022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="11.2994" y="40.4422"/>
 <vertex x="11.2994" y="40.6322"/>
 <vertex x="10.9194" y="40.6322"/>
@@ -3303,7 +3315,7 @@
 <vertex x="10.9194" y="40.2122"/>
 <vertex x="10.9194" y="40.4422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="11.5294" y="40.8322"/>
 <vertex x="11.8294" y="40.8322"/>
 <vertex x="11.8294" y="40.0122"/>
@@ -3313,13 +3325,13 @@
 <vertex x="12.3594" y="41.0222"/>
 <vertex x="11.5294" y="41.0222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="5.6194" y="70.5922"/>
 <vertex x="6.0394" y="70.5922"/>
 <vertex x="6.0394" y="69.2622"/>
 <vertex x="5.6194" y="69.2622"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="16.2494" y="69.6822"/>
 <vertex x="16.9394" y="69.6822"/>
 <vertex x="16.9394" y="70.0822"/>
@@ -3333,7 +3345,7 @@
 <vertex x="15.8594" y="69.0222"/>
 <vertex x="16.2494" y="69.0222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="19.4794" y="51.3322"/>
 <vertex x="19.4794" y="51.4022"/>
 <vertex x="19.4594" y="51.4822"/>
@@ -3365,7 +3377,7 @@
 <vertex x="19.4694" y="51.2822"/>
 <vertex x="19.4694" y="51.3022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="20.2494" y="51.1722"/>
 <vertex x="20.5294" y="51.6722"/>
 <vertex x="20.2794" y="51.6722"/>
@@ -3441,7 +3453,7 @@
 <vertex x="20.2894" y="50.6622"/>
 <vertex x="20.5394" y="50.6622"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="19.0194" y="53.2222"/>
 <vertex x="19.2494" y="53.2222"/>
 <vertex x="19.2494" y="54.0422"/>
@@ -3451,7 +3463,7 @@
 <vertex x="18.7194" y="54.0422"/>
 <vertex x="19.0194" y="54.0422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="19.9594" y="53.2222"/>
 <vertex x="20.0694" y="53.4322"/>
 <vertex x="20.0694" y="53.4422"/>
@@ -4539,7 +4551,7 @@
 <vertex x="43.3994" y="68.6022"/>
 <vertex x="43.2994" y="68.4522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="16.9594" y="23.4422"/>
 <vertex x="16.6594" y="23.4422"/>
 <vertex x="16.6594" y="23.4322"/>
@@ -4570,7 +4582,7 @@
 <vertex x="16.9494" y="23.3922"/>
 <vertex x="16.9494" y="23.4222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="16.2394" y="24.2622"/>
 <vertex x="16.1794" y="24.2622"/>
 <vertex x="16.1294" y="24.2722"/>
@@ -4633,7 +4645,7 @@
 <vertex x="16.2694" y="24.2522"/>
 <vertex x="16.2594" y="24.2522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="16.4594" y="24.9822"/>
 <vertex x="16.8194" y="24.2422"/>
 <vertex x="17.0094" y="24.1322"/>
@@ -4662,12 +4674,12 @@
 <vertex x="16.7394" y="24.9722"/>
 <vertex x="16.7394" y="24.9822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="16.3994" y="25.2822"/>
 <vertex x="16.3594" y="25.2022"/>
 <vertex x="16.3994" y="25.1022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="16.3994" y="25.2822"/>
 <vertex x="16.3994" y="25.1022"/>
 <vertex x="16.4594" y="24.9822"/>
@@ -4704,7 +4716,7 @@
 <vertex x="17.0594" y="25.2722"/>
 <vertex x="16.5594" y="25.5522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="21.2394" y="23.0922"/>
 <vertex x="21.2394" y="23.4822"/>
 <vertex x="20.8794" y="23.6922"/>
@@ -4733,7 +4745,7 @@
 <vertex x="20.6794" y="23.8822"/>
 <vertex x="20.4794" y="23.5322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="21.3594" y="24.2622"/>
 <vertex x="21.1494" y="24.2622"/>
 <vertex x="21.1194" y="24.2522"/>
@@ -4800,7 +4812,7 @@
 <vertex x="21.3994" y="24.2522"/>
 <vertex x="21.3794" y="24.2522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="22.5794" y="25.1822"/>
 <vertex x="22.5294" y="25.2022"/>
 <vertex x="22.4894" y="25.2222"/>
@@ -4898,7 +4910,7 @@
 <vertex x="22.6794" y="25.1122"/>
 <vertex x="22.6294" y="25.1522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="27.0294" y="23.8822"/>
 <vertex x="26.4894" y="23.8822"/>
 <vertex x="26.5094" y="23.8822"/>
@@ -4938,7 +4950,7 @@
 <vertex x="27.0794" y="23.8022"/>
 <vertex x="27.0494" y="23.8422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="26.4194" y="24.2722"/>
 <vertex x="26.3594" y="24.2822"/>
 <vertex x="26.2094" y="24.2822"/>
@@ -4990,7 +5002,7 @@
 <vertex x="26.4694" y="24.2622"/>
 <vertex x="26.4494" y="24.2722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="27.3994" y="25.2422"/>
 <vertex x="27.3694" y="25.2422"/>
 <vertex x="27.3394" y="25.2322"/>
@@ -5106,7 +5118,7 @@
 <vertex x="27.3594" y="24.9322"/>
 <vertex x="27.3994" y="24.9322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="27.3994" y="25.2422"/>
 <vertex x="27.3994" y="24.9322"/>
 <vertex x="27.4494" y="24.9322"/>
@@ -5172,7 +5184,7 @@
 <vertex x="27.4894" y="25.2322"/>
 <vertex x="27.4694" y="25.2422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="32.2194" y="23.6622"/>
 <vertex x="31.8994" y="23.6622"/>
 <vertex x="31.9094" y="23.6422"/>
@@ -5196,7 +5208,7 @@
 <vertex x="32.2294" y="23.5222"/>
 <vertex x="32.2294" y="23.6322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="31.5094" y="24.3122"/>
 <vertex x="31.4594" y="24.3222"/>
 <vertex x="31.2994" y="24.3222"/>
@@ -5263,7 +5275,7 @@
 <vertex x="31.5694" y="24.3022"/>
 <vertex x="31.5494" y="24.3122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="32.0094" y="25.5122"/>
 <vertex x="31.8294" y="25.6222"/>
 <vertex x="31.2894" y="24.6722"/>
@@ -5298,7 +5310,7 @@
 <vertex x="32.0794" y="25.3322"/>
 <vertex x="32.0394" y="25.4222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="37.3494" y="23.6622"/>
 <vertex x="37.0194" y="23.6622"/>
 <vertex x="37.0394" y="23.6222"/>
@@ -5321,7 +5333,7 @@
 <vertex x="37.3394" y="23.4722"/>
 <vertex x="37.3494" y="23.5022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="36.6294" y="24.3122"/>
 <vertex x="36.5794" y="24.3222"/>
 <vertex x="36.4294" y="24.3222"/>
@@ -5389,7 +5401,7 @@
 <vertex x="36.6894" y="24.3022"/>
 <vertex x="36.6694" y="24.3122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="37.0694" y="25.4322"/>
 <vertex x="37.0394" y="25.4322"/>
 <vertex x="37.0094" y="25.4222"/>
@@ -5530,7 +5542,7 @@
 <vertex x="36.9694" y="25.1422"/>
 <vertex x="37.0694" y="25.1422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="37.0694" y="25.4322"/>
 <vertex x="37.0694" y="25.1422"/>
 <vertex x="37.1094" y="25.1422"/>
@@ -5616,7 +5628,7 @@
 <vertex x="37.0894" y="25.4222"/>
 <vertex x="37.0794" y="25.4322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="14.4894" y="8.4922"/>
 <vertex x="14.4894" y="7.6322"/>
 <vertex x="14.9994" y="7.6322"/>
@@ -5662,7 +5674,7 @@
 <vertex x="14.8994" y="7.9622"/>
 <vertex x="14.8994" y="8.4922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="14.4894" y="8.4922"/>
 <vertex x="14.8994" y="8.4922"/>
 <vertex x="14.8994" y="9.1122"/>
@@ -5701,7 +5713,7 @@
 <vertex x="14.9894" y="9.4422"/>
 <vertex x="14.4894" y="9.4422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="16.8694" y="7.9722"/>
 <vertex x="16.6994" y="7.9722"/>
 <vertex x="16.6694" y="7.9622"/>
@@ -5785,7 +5797,7 @@
 <vertex x="17.2894" y="7.9822"/>
 <vertex x="16.8694" y="7.9822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="69.0494" y="8.7122"/>
 <vertex x="68.7094" y="7.6322"/>
 <vertex x="69.1294" y="7.6322"/>
@@ -5817,7 +5829,7 @@
 <vertex x="69.3994" y="8.7022"/>
 <vertex x="69.4094" y="8.7122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="69.0494" y="8.7122"/>
 <vertex x="69.4094" y="8.7122"/>
 <vertex x="69.4094" y="8.7422"/>
@@ -5854,7 +5866,7 @@
 <vertex x="69.7594" y="9.4422"/>
 <vertex x="69.2694" y="9.4422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="71.4794" y="8.5422"/>
 <vertex x="71.4794" y="8.5522"/>
 <vertex x="71.5194" y="8.5722"/>
@@ -5992,7 +6004,7 @@
 <vertex x="71.5594" y="8.5122"/>
 <vertex x="71.5194" y="8.5322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="94.1884" y="4.4282"/>
 <vertex x="94.1884" y="3.5682"/>
 <vertex x="94.6984" y="3.5682"/>
@@ -6021,7 +6033,7 @@
 <vertex x="94.5984" y="3.8982"/>
 <vertex x="94.5984" y="4.4282"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="94.1884" y="4.4282"/>
 <vertex x="94.5984" y="4.4282"/>
 <vertex x="94.5984" y="5.0482"/>
@@ -6060,7 +6072,7 @@
 <vertex x="94.6784" y="5.3782"/>
 <vertex x="94.1884" y="5.3782"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="64.1348" y="2.4716"/>
 <vertex x="64.1348" y="2.4816"/>
 <vertex x="64.1748" y="2.5016"/>
@@ -6207,7 +6219,7 @@
 <vertex x="64.2148" y="2.4416"/>
 <vertex x="64.1748" y="2.4616"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="49.2717375" y="27.908728125"/>
 <vertex x="48.329678125" y="27.3604375"/>
 <vertex x="48.58621875" y="26.91965625"/>
@@ -6256,7 +6268,7 @@
 <vertex x="48.821128125" y="27.17208125"/>
 <vertex x="49.477975" y="27.554378125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="49.2717375" y="27.908728125"/>
 <vertex x="49.477975" y="27.554378125"/>
 <vertex x="49.81504375" y="27.750553125"/>
@@ -6287,7 +6299,7 @@
 <vertex x="50.140496875" y="27.847409375"/>
 <vertex x="49.894015625" y="28.270903125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="50.364753125" y="26.786178125"/>
 <vertex x="50.347465625" y="26.77611875"/>
 <vertex x="50.33379375" y="26.77973125"/>
@@ -6434,7 +6446,7 @@
 <vertex x="50.402525" y="26.4032"/>
 <vertex x="50.22646875" y="26.705696875"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="50.364753125" y="26.786178125"/>
 <vertex x="50.22646875" y="26.705696875"/>
 <vertex x="50.402525" y="26.4032"/>
@@ -6488,7 +6500,7 @@
 <vertex x="50.450403125" y="26.778178125"/>
 <vertex x="50.405771875" y="26.775340625"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="51.711096875" y="25.41968125"/>
 <vertex x="51.65645625" y="25.434321875"/>
 <vertex x="51.60315625" y="25.42664375"/>
@@ -6533,7 +6545,7 @@
 <vertex x="51.727796875" y="25.290759375"/>
 <vertex x="51.786096875" y="25.289778125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="51.239259375" y="24.69693125"/>
 <vertex x="50.47715625" y="24.25693125"/>
 <vertex x="50.59215625" y="24.057746875"/>
@@ -6607,7 +6619,7 @@
 <vertex x="51.284978125" y="24.457746875"/>
 <vertex x="51.354259375" y="24.497746875"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="51.239259375" y="24.69693125"/>
 <vertex x="51.354259375" y="24.497746875"/>
 <vertex x="51.692009375" y="24.692746875"/>
@@ -6651,7 +6663,7 @@
 <vertex x="51.98789375" y="24.540259375"/>
 <vertex x="51.73289375" y="24.98193125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="51.720071875" y="23.4041375"/>
 <vertex x="51.980071875" y="22.953803125"/>
 <vertex x="52.153278125" y="23.053803125"/>
@@ -6665,7 +6677,7 @@
 <vertex x="51.6067" y="22.680503125"/>
 <vertex x="51.3217" y="23.1741375"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.123734375" y="22.724978125"/>
 <vertex x="51.55215625" y="22.394978125"/>
 <vertex x="51.79215625" y="21.979284375"/>
@@ -6694,7 +6706,7 @@
 <vertex x="51.81438125" y="22.280790625"/>
 <vertex x="52.238734375" y="22.525790625"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.123734375" y="22.724978125"/>
 <vertex x="52.238734375" y="22.525790625"/>
 <vertex x="52.767009375" y="22.830790625"/>
@@ -6733,7 +6745,7 @@
 <vertex x="53.01289375" y="22.76490625"/>
 <vertex x="52.80789375" y="23.119978125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.02493125" y="21.23610625"/>
 <vertex x="52.1242125" y="21.22414375"/>
 <vertex x="52.177515625" y="21.231825"/>
@@ -6780,7 +6792,7 @@
 <vertex x="52.119834375" y="21.371728125"/>
 <vertex x="51.94493125" y="21.37466875"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.668528125" y="33.25755625"/>
 <vertex x="52.753884375" y="33.347078125"/>
 <vertex x="52.787275" y="33.3856125"/>
@@ -6837,7 +6849,7 @@
 <vertex x="52.424659375" y="33.557103125"/>
 <vertex x="52.737678125" y="33.379284375"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.668528125" y="33.25755625"/>
 <vertex x="52.737678125" y="33.379284375"/>
 <vertex x="52.424659375" y="33.557103125"/>
@@ -6873,7 +6885,7 @@
 <vertex x="52.607865625" y="33.211509375"/>
 <vertex x="52.640071875" y="33.227715625"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="53.988003125" y="34.831178125"/>
 <vertex x="53.687840625" y="34.829178125"/>
 <vertex x="53.664328125" y="34.80803125"/>
@@ -6895,7 +6907,7 @@
 <vertex x="54.395965625" y="33.403321875"/>
 <vertex x="53.992853125" y="33.40230625"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="54.68951875" y="34.54766875"/>
 <vertex x="54.640121875" y="34.46071875"/>
 <vertex x="54.634" y="34.429696875"/>
@@ -7016,7 +7028,7 @@
 <vertex x="54.975265625" y="34.362340625"/>
 <vertex x="54.985146875" y="34.37973125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="54.68951875" y="34.54766875"/>
 <vertex x="54.985146875" y="34.37973125"/>
 <vertex x="55.0296" y="34.457984375"/>
@@ -7048,7 +7060,7 @@
 <vertex x="54.74266875" y="34.620984375"/>
 <vertex x="54.719153125" y="34.599840625"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="55.017190625" y="33.970496875"/>
 <vertex x="55.0247" y="33.943228125"/>
 <vertex x="55.023515625" y="33.920896875"/>
@@ -7097,7 +7109,7 @@
 <vertex x="55.028253125" y="34.010215625"/>
 <vertex x="55.018375" y="33.992825"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.989725" y="25.37194375"/>
 <vertex x="61.912140625" y="25.246321875"/>
 <vertex x="61.942140625" y="25.194359375"/>
@@ -7147,7 +7159,7 @@
 <vertex x="62.05838125" y="25.273021875"/>
 <vertex x="62.019725" y="25.31998125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="63.13254375" y="24.99251875"/>
 <vertex x="63.36636875" y="25.127521875"/>
 <vertex x="63.074146875" y="25.29366875"/>
@@ -7168,7 +7180,7 @@
 <vertex x="62.70728125" y="25.509096875"/>
 <vertex x="62.47345625" y="25.374096875"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="62.283190625" y="25.483640625"/>
 <vertex x="62.47345625" y="25.374096875"/>
 <vertex x="62.70728125" y="25.509096875"/>
@@ -7261,7 +7273,7 @@
 <vertex x="62.5479" y="25.92515"/>
 <vertex x="62.5232625" y="25.887828125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="64.077134375" y="25.67644375"/>
 <vertex x="64.46603125" y="26.362853125"/>
 <vertex x="64.3030875" y="26.465075"/>
@@ -7269,7 +7281,7 @@
 <vertex x="62.9331375" y="26.5979"/>
 <vertex x="62.814934375" y="26.402634375"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="63.715934375" y="27.962059375"/>
 <vertex x="63.60273125" y="27.758134375"/>
 <vertex x="64.5030625" y="27.2387125"/>
@@ -7325,7 +7337,7 @@
 <vertex x="64.6535875" y="27.41799375"/>
 <vertex x="64.60260625" y="27.446296875"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="64.88980625" y="28.408853125"/>
 <vertex x="64.723203125" y="28.497415625"/>
 <vertex x="64.46349375" y="28.04725"/>
@@ -7339,7 +7351,7 @@
 <vertex x="65.029278125" y="27.727278125"/>
 <vertex x="64.63009375" y="27.958684375"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="65.108178125" y="28.950621875"/>
 <vertex x="65.16415625" y="28.9136625"/>
 <vertex x="65.215140625" y="28.885359375"/>
@@ -7385,7 +7397,7 @@
 <vertex x="64.946571875" y="29.030525"/>
 <vertex x="65.006215625" y="29.007225"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.4634" y="21.1832"/>
 <vertex x="61.0034" y="21.1832"/>
 <vertex x="61.0334" y="21.1532"/>
@@ -7412,7 +7424,7 @@
 <vertex x="61.4834" y="21.1132"/>
 <vertex x="61.4734" y="21.1532"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="60.6034" y="21.8832"/>
 <vertex x="60.5434" y="21.8932"/>
 <vertex x="60.3534" y="21.8932"/>
@@ -7481,7 +7493,7 @@
 <vertex x="60.6534" y="21.8732"/>
 <vertex x="60.6334" y="21.8832"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="62.0134" y="22.3532"/>
 <vertex x="60.7734" y="23.0632"/>
 <vertex x="60.6234" y="22.8032"/>
@@ -7504,7 +7516,7 @@
 <vertex x="62.4934" y="22.5332"/>
 <vertex x="62.2134" y="22.6932"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="62.7634" y="23.6432"/>
 <vertex x="61.5234" y="24.3632"/>
 <vertex x="61.3734" y="24.1032"/>
@@ -7528,7 +7540,7 @@
 <vertex x="63.2434" y="23.8232"/>
 <vertex x="62.9534" y="23.9932"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="56.416725" y="33.88434375"/>
 <vertex x="56.4186875" y="34.000946875"/>
 <vertex x="56.41466875" y="34.067909375"/>
@@ -7576,7 +7588,7 @@
 <vertex x="56.428425" y="33.76408125"/>
 <vertex x="56.420746875" y="33.817384375"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="57.352846875" y="33.962934375"/>
 <vertex x="57.363565625" y="33.784371875"/>
 <vertex x="57.60543125" y="33.785446875"/>
@@ -7681,7 +7693,7 @@
 <vertex x="57.82016875" y="33.1935125"/>
 <vertex x="57.82791875" y="33.9600875"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="58.2391375" y="34.6478375"/>
 <vertex x="58.06423125" y="34.65078125"/>
 <vertex x="58.057034375" y="33.20325"/>
@@ -7782,7 +7794,7 @@
 <vertex x="58.29449375" y="34.471953125"/>
 <vertex x="58.3391375" y="34.474634375"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="58.2391375" y="34.6478375"/>
 <vertex x="58.3391375" y="34.474634375"/>
 <vertex x="58.49171875" y="34.47035"/>
@@ -7827,7 +7839,7 @@
 <vertex x="58.683225" y="34.638653125"/>
 <vertex x="58.575284375" y="34.6456125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="59.94444375" y="33.854159375"/>
 <vertex x="59.946046875" y="34.051384375"/>
 <vertex x="59.426334375" y="34.05155"/>
@@ -7841,7 +7853,7 @@
 <vertex x="59.425546875" y="33.392915625"/>
 <vertex x="59.42473125" y="33.854325"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="60.961546875" y="33.8524875"/>
 <vertex x="60.96315" y="34.049709375"/>
 <vertex x="60.4434375" y="34.049878125"/>
@@ -7855,7 +7867,7 @@
 <vertex x="60.44265" y="33.39124375"/>
 <vertex x="60.441834375" y="33.852653125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.924103125" y="33.5652875"/>
 <vertex x="61.5049875" y="34.651215625"/>
 <vertex x="61.21848125" y="34.647459375"/>
@@ -7869,7 +7881,7 @@
 <vertex x="61.93541875" y="34.645690625"/>
 <vertex x="61.9327625" y="33.5702875"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="63.04869375" y="33.937440625"/>
 <vertex x="63.044675" y="34.004403125"/>
 <vertex x="63.035653125" y="34.080025"/>
@@ -7922,199 +7934,199 @@
 <vertex x="63.0344125" y="33.802178125"/>
 <vertex x="63.044053125" y="33.86548125"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="38.8244" y="46.4122"/>
 <vertex x="41.5644" y="46.4122"/>
 <vertex x="41.5644" y="45.9022"/>
 <vertex x="38.8244" y="45.9022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="47.0822"/>
 <vertex x="41.5644" y="47.0822"/>
 <vertex x="41.5644" y="46.7522"/>
 <vertex x="40.1444" y="46.7522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="47.8422"/>
 <vertex x="41.5644" y="47.8422"/>
 <vertex x="41.5644" y="47.5122"/>
 <vertex x="40.1444" y="47.5122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="48.6022"/>
 <vertex x="41.5644" y="48.6022"/>
 <vertex x="41.5644" y="48.2722"/>
 <vertex x="40.1444" y="48.2722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="49.3622"/>
 <vertex x="41.5644" y="49.3622"/>
 <vertex x="41.5644" y="49.0322"/>
 <vertex x="40.1444" y="49.0322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="38.8244" y="50.2122"/>
 <vertex x="41.5644" y="50.2122"/>
 <vertex x="41.5644" y="49.7022"/>
 <vertex x="38.8244" y="49.7022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="50.8822"/>
 <vertex x="41.5644" y="50.8822"/>
 <vertex x="41.5644" y="50.5522"/>
 <vertex x="40.1444" y="50.5522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="51.6422"/>
 <vertex x="41.5644" y="51.6422"/>
 <vertex x="41.5644" y="51.3122"/>
 <vertex x="40.1444" y="51.3122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="52.4022"/>
 <vertex x="41.5644" y="52.4022"/>
 <vertex x="41.5644" y="52.0722"/>
 <vertex x="40.1444" y="52.0722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="53.1622"/>
 <vertex x="41.5644" y="53.1622"/>
 <vertex x="41.5644" y="52.8322"/>
 <vertex x="40.1444" y="52.8322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="38.8244" y="54.0122"/>
 <vertex x="41.5644" y="54.0122"/>
 <vertex x="41.5644" y="53.5022"/>
 <vertex x="38.8244" y="53.5022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="54.6822"/>
 <vertex x="41.5644" y="54.6822"/>
 <vertex x="41.5644" y="54.3522"/>
 <vertex x="40.1444" y="54.3522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="55.4422"/>
 <vertex x="41.5644" y="55.4422"/>
 <vertex x="41.5644" y="55.1122"/>
 <vertex x="40.1444" y="55.1122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="56.2022"/>
 <vertex x="41.5644" y="56.2022"/>
 <vertex x="41.5644" y="55.8722"/>
 <vertex x="40.1444" y="55.8722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="56.9622"/>
 <vertex x="41.5644" y="56.9622"/>
 <vertex x="41.5644" y="56.6322"/>
 <vertex x="40.1444" y="56.6322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="38.8244" y="57.8122"/>
 <vertex x="41.5644" y="57.8122"/>
 <vertex x="41.5644" y="57.3022"/>
 <vertex x="38.8244" y="57.3022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="58.4822"/>
 <vertex x="41.5644" y="58.4822"/>
 <vertex x="41.5644" y="58.1522"/>
 <vertex x="40.1444" y="58.1522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="59.2422"/>
 <vertex x="41.5644" y="59.2422"/>
 <vertex x="41.5644" y="58.9122"/>
 <vertex x="40.1444" y="58.9122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="60.0022"/>
 <vertex x="41.5644" y="60.0022"/>
 <vertex x="41.5644" y="59.6722"/>
 <vertex x="40.1444" y="59.6722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="40.1444" y="60.7622"/>
 <vertex x="41.5644" y="60.7622"/>
 <vertex x="41.5644" y="60.4322"/>
 <vertex x="40.1444" y="60.4322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="38.8244" y="61.6022"/>
 <vertex x="41.5644" y="61.6022"/>
 <vertex x="41.5644" y="61.1022"/>
 <vertex x="38.8244" y="61.1022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="74.4644" y="62.7622"/>
 <vertex x="76.5844" y="62.7622"/>
 <vertex x="76.5844" y="62.2622"/>
 <vertex x="74.4644" y="62.2622"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="74.4644" y="60.4822"/>
 <vertex x="76.5844" y="60.4822"/>
 <vertex x="76.5844" y="59.9722"/>
 <vertex x="74.4644" y="59.9722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="74.4644" y="58.1922"/>
 <vertex x="76.5844" y="58.1922"/>
 <vertex x="76.5844" y="57.6922"/>
 <vertex x="74.4644" y="57.6922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="74.4644" y="55.9122"/>
 <vertex x="76.5844" y="55.9122"/>
 <vertex x="76.5844" y="55.4022"/>
 <vertex x="74.4644" y="55.4022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="74.4644" y="53.6322"/>
 <vertex x="76.5844" y="53.6322"/>
 <vertex x="76.5844" y="53.1222"/>
 <vertex x="74.4644" y="53.1222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="74.4644" y="61.6222"/>
 <vertex x="76.5844" y="61.6222"/>
 <vertex x="76.5844" y="61.1122"/>
 <vertex x="74.4644" y="61.1122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="74.4644" y="59.3322"/>
 <vertex x="76.5844" y="59.3322"/>
 <vertex x="76.5844" y="58.8322"/>
 <vertex x="74.4644" y="58.8322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="74.4644" y="57.0522"/>
 <vertex x="76.5844" y="57.0522"/>
 <vertex x="76.5844" y="56.5422"/>
 <vertex x="74.4644" y="56.5422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="74.4644" y="54.7722"/>
 <vertex x="76.5844" y="54.7722"/>
 <vertex x="76.5844" y="54.2622"/>
 <vertex x="74.4644" y="54.2622"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="54.3244" y="49.8822"/>
 <vertex x="54.2544" y="50.3922"/>
 <vertex x="54.5344" y="50.4322"/>
 <vertex x="54.6144" y="49.9322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="53.8444" y="49.8122"/>
 <vertex x="53.3544" y="49.7422"/>
 <vertex x="53.2744" y="50.2422"/>
 <vertex x="53.7644" y="50.3122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.7944" y="50.1222"/>
 <vertex x="52.7844" y="50.1622"/>
 <vertex x="52.6644" y="50.1422"/>
@@ -8124,19 +8136,19 @@
 <vertex x="52.8144" y="49.9922"/>
 <vertex x="52.8344" y="50.1122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.4644" y="51.1022"/>
 <vertex x="52.9644" y="51.0322"/>
 <vertex x="52.8944" y="50.5722"/>
 <vertex x="52.3944" y="50.6422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.5944" y="52.0122"/>
 <vertex x="53.0944" y="51.9422"/>
 <vertex x="53.0244" y="51.4822"/>
 <vertex x="52.5244" y="51.5522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.5644" y="52.6822"/>
 <vertex x="52.6744" y="52.6022"/>
 <vertex x="52.6544" y="52.4622"/>
@@ -8144,19 +8156,19 @@
 <vertex x="53.2244" y="52.8322"/>
 <vertex x="52.8644" y="53.0922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="51.8144" y="53.2322"/>
 <vertex x="52.1144" y="53.6422"/>
 <vertex x="52.4844" y="53.3722"/>
 <vertex x="52.1944" y="52.9622"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="51.4444" y="53.5022"/>
 <vertex x="51.0744" y="53.7722"/>
 <vertex x="51.3644" y="54.1822"/>
 <vertex x="51.7444" y="53.9122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="50.9744" y="54.4222"/>
 <vertex x="50.9944" y="54.4522"/>
 <vertex x="50.8944" y="54.5222"/>
@@ -8166,19 +8178,19 @@
 <vertex x="50.9044" y="54.3122"/>
 <vertex x="50.9944" y="54.3922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.1644" y="55.9022"/>
 <vertex x="52.4744" y="55.5022"/>
 <vertex x="52.1044" y="55.2222"/>
 <vertex x="51.7944" y="55.6222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="51.4344" y="55.3522"/>
 <vertex x="51.7344" y="54.9422"/>
 <vertex x="51.3644" y="54.6722"/>
 <vertex x="51.0644" y="55.0722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.8444" y="55.7722"/>
 <vertex x="53.1944" y="56.0422"/>
 <vertex x="53.1244" y="56.4722"/>
@@ -8186,19 +8198,19 @@
 <vertex x="52.6444" y="56.2622"/>
 <vertex x="52.5344" y="56.1722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="53.0544" y="56.9322"/>
 <vertex x="52.5544" y="56.8522"/>
 <vertex x="52.4844" y="57.3122"/>
 <vertex x="52.9844" y="57.3922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.9044" y="57.8422"/>
 <vertex x="52.4044" y="57.7622"/>
 <vertex x="52.3344" y="58.2222"/>
 <vertex x="52.8344" y="58.3022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="52.7344" y="58.7422"/>
 <vertex x="52.7644" y="58.7522"/>
 <vertex x="52.7444" y="58.8722"/>
@@ -8208,19 +8220,19 @@
 <vertex x="52.6044" y="58.7222"/>
 <vertex x="52.7244" y="58.7122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="53.2544" y="59.1422"/>
 <vertex x="53.7044" y="59.0822"/>
 <vertex x="53.6344" y="58.5722"/>
 <vertex x="53.1744" y="58.6422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="54.1644" y="59.0122"/>
 <vertex x="54.6144" y="58.9522"/>
 <vertex x="54.5444" y="58.4522"/>
 <vertex x="54.0944" y="58.5122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="55.2144" y="58.8622"/>
 <vertex x="55.0744" y="58.8822"/>
 <vertex x="55.0044" y="58.3822"/>
@@ -8228,19 +8240,19 @@
 <vertex x="55.7044" y="58.6822"/>
 <vertex x="55.2944" y="58.9822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="55.8344" y="59.7222"/>
 <vertex x="56.2444" y="59.4222"/>
 <vertex x="55.9744" y="59.0522"/>
 <vertex x="55.5644" y="59.3522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="56.3744" y="60.4722"/>
 <vertex x="56.7944" y="60.1722"/>
 <vertex x="56.5144" y="59.7922"/>
 <vertex x="56.1044" y="60.0922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="56.9244" y="60.6422"/>
 <vertex x="56.9944" y="60.5422"/>
 <vertex x="57.0244" y="60.5622"/>
@@ -8250,19 +8262,19 @@
 <vertex x="57.0244" y="61.3522"/>
 <vertex x="56.6444" y="60.8422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="57.5444" y="59.8022"/>
 <vertex x="57.2744" y="60.1722"/>
 <vertex x="57.6744" y="60.4722"/>
 <vertex x="57.9544" y="60.1122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="58.2344" y="59.7422"/>
 <vertex x="58.5144" y="59.3722"/>
 <vertex x="58.1044" y="59.0722"/>
 <vertex x="57.8344" y="59.4422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="58.8744" y="58.8922"/>
 <vertex x="58.7844" y="59.0022"/>
 <vertex x="58.3844" y="58.7022"/>
@@ -8270,19 +8282,19 @@
 <vertex x="59.0844" y="58.4122"/>
 <vertex x="59.0044" y="58.9122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="59.4644" y="58.9822"/>
 <vertex x="59.9144" y="59.0522"/>
 <vertex x="59.9944" y="58.5522"/>
 <vertex x="59.5444" y="58.4822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="60.8344" y="59.2022"/>
 <vertex x="60.9044" y="58.7022"/>
 <vertex x="60.4544" y="58.6322"/>
 <vertex x="60.3744" y="59.1322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.3544" y="58.8122"/>
 <vertex x="61.3644" y="58.7722"/>
 <vertex x="61.4844" y="58.7922"/>
@@ -8292,19 +8304,19 @@
 <vertex x="61.3344" y="58.9422"/>
 <vertex x="61.3144" y="58.8122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.6844" y="57.8322"/>
 <vertex x="61.1844" y="57.9022"/>
 <vertex x="61.2544" y="58.3622"/>
 <vertex x="61.7544" y="58.2922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.5644" y="56.9222"/>
 <vertex x="61.0544" y="56.9922"/>
 <vertex x="61.1244" y="57.4522"/>
 <vertex x="61.6244" y="57.3722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.5844" y="56.2422"/>
 <vertex x="61.4744" y="56.3222"/>
 <vertex x="61.4944" y="56.4622"/>
@@ -8312,19 +8324,19 @@
 <vertex x="60.9344" y="56.0922"/>
 <vertex x="61.2844" y="55.8322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="62.3344" y="55.7022"/>
 <vertex x="62.0344" y="55.2922"/>
 <vertex x="61.6644" y="55.5622"/>
 <vertex x="61.9544" y="55.9722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="62.4044" y="55.0222"/>
 <vertex x="62.7044" y="55.4322"/>
 <vertex x="63.0744" y="55.1622"/>
 <vertex x="62.7844" y="54.7522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="63.2544" y="54.4122"/>
 <vertex x="63.4544" y="54.1322"/>
 <vertex x="63.9644" y="54.5222"/>
@@ -8334,19 +8346,19 @@
 <vertex x="63.1744" y="54.5122"/>
 <vertex x="63.1544" y="54.4822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.6744" y="53.4422"/>
 <vertex x="62.0444" y="53.7122"/>
 <vertex x="62.3444" y="53.3122"/>
 <vertex x="61.9844" y="53.0322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="62.7844" y="54.2622"/>
 <vertex x="63.0944" y="53.8622"/>
 <vertex x="62.7244" y="53.5822"/>
 <vertex x="62.4144" y="53.9922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.6144" y="52.7522"/>
 <vertex x="61.3044" y="53.1622"/>
 <vertex x="60.9544" y="52.8922"/>
@@ -8354,19 +8366,19 @@
 <vertex x="61.5244" y="52.5322"/>
 <vertex x="61.5044" y="52.6722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.7344" y="51.1622"/>
 <vertex x="61.8044" y="50.7122"/>
 <vertex x="61.3044" y="50.6322"/>
 <vertex x="61.2344" y="51.0822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.5944" y="52.0722"/>
 <vertex x="61.6644" y="51.6222"/>
 <vertex x="61.1644" y="51.5422"/>
 <vertex x="61.0944" y="51.9922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="61.5444" y="50.2022"/>
 <vertex x="61.4244" y="50.2222"/>
 <vertex x="61.4244" y="50.1822"/>
@@ -8376,19 +8388,19 @@
 <vertex x="61.9844" y="49.6322"/>
 <vertex x="61.8844" y="50.2622"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="60.3744" y="50.3722"/>
 <vertex x="60.9044" y="50.3022"/>
 <vertex x="60.8344" y="49.7922"/>
 <vertex x="60.3044" y="49.8722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="59.8544" y="50.4422"/>
 <vertex x="59.7844" y="49.9422"/>
 <vertex x="59.4944" y="49.9822"/>
 <vertex x="59.5744" y="50.4922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="7.2894" y="3.3422"/>
 <vertex x="7.1694" y="3.3422"/>
 <vertex x="7.1094" y="3.3122"/>
@@ -8430,7 +8442,7 @@
 <vertex x="7.3594" y="3.3022"/>
 <vertex x="7.3494" y="3.3122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="6.5894" y="3.4422"/>
 <vertex x="6.5894" y="3.4222"/>
 <vertex x="6.5794" y="3.4022"/>
@@ -8517,7 +8529,7 @@
 <vertex x="6.9394" y="3.4222"/>
 <vertex x="6.9494" y="3.4422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="6.5894" y="3.4422"/>
 <vertex x="6.9494" y="3.4422"/>
 <vertex x="6.9594" y="3.4722"/>
@@ -8575,13 +8587,13 @@
 <vertex x="6.6294" y="3.5722"/>
 <vertex x="6.6094" y="3.5122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="9.6094" y="3.2122"/>
 <vertex x="10.8294" y="3.2122"/>
 <vertex x="10.8294" y="2.9022"/>
 <vertex x="9.6094" y="2.9022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="13.4694" y="4.0022"/>
 <vertex x="13.1694" y="4.0022"/>
 <vertex x="13.1394" y="3.9922"/>
@@ -8602,7 +8614,7 @@
 <vertex x="13.8694" y="2.5722"/>
 <vertex x="13.4694" y="2.5722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="1.5094" y="57.5422"/>
 <vertex x="1.4994" y="57.7322"/>
 <vertex x="1.4494" y="57.7322"/>
@@ -8688,7 +8700,7 @@
 <vertex x="1.4494" y="57.5322"/>
 <vertex x="1.4594" y="57.5422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="2.0494" y="58.4422"/>
 <vertex x="1.8894" y="58.2822"/>
 <vertex x="2.1694" y="58.0022"/>
@@ -8702,7 +8714,7 @@
 <vertex x="2.6094" y="57.5622"/>
 <vertex x="2.7694" y="57.7322"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="2.9994" y="58.2922"/>
 <vertex x="2.9994" y="58.4022"/>
 <vertex x="2.8494" y="58.4022"/>
@@ -8712,7 +8724,7 @@
 <vertex x="2.8894" y="58.1822"/>
 <vertex x="2.8794" y="58.1822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="2.5494" y="58.9322"/>
 <vertex x="2.3594" y="58.7422"/>
 <vertex x="2.8494" y="57.8022"/>
@@ -8743,7 +8755,7 @@
 <vertex x="3.3094" y="58.2722"/>
 <vertex x="3.4794" y="58.4422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.2194" y="59.5622"/>
 <vertex x="3.2094" y="59.5622"/>
 <vertex x="3.1894" y="59.5422"/>
@@ -8803,7 +8815,7 @@
 <vertex x="3.1394" y="59.2722"/>
 <vertex x="3.2194" y="59.3522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.2194" y="59.5622"/>
 <vertex x="3.2194" y="59.3522"/>
 <vertex x="3.2294" y="59.3522"/>
@@ -8830,7 +8842,7 @@
 <vertex x="3.2594" y="59.5922"/>
 <vertex x="3.2394" y="59.5822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="4.5394" y="59.4722"/>
 <vertex x="4.5494" y="59.4922"/>
 <vertex x="4.5994" y="59.5422"/>
@@ -8914,7 +8926,7 @@
 <vertex x="4.4694" y="59.4122"/>
 <vertex x="4.4994" y="59.4422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="5.2494" y="60.4822"/>
 <vertex x="4.9294" y="60.1622"/>
 <vertex x="4.7694" y="60.3322"/>
@@ -8928,7 +8940,7 @@
 <vertex x="4.9094" y="59.8722"/>
 <vertex x="5.3894" y="60.3522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.2194" y="50.5222"/>
 <vertex x="3.2194" y="50.7722"/>
 <vertex x="3.1994" y="50.7722"/>
@@ -8976,7 +8988,7 @@
 <vertex x="3.1794" y="50.5322"/>
 <vertex x="3.1994" y="50.5222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.1394" y="51.4622"/>
 <vertex x="3.0594" y="51.4622"/>
 <vertex x="3.0394" y="51.4522"/>
@@ -9079,7 +9091,7 @@
 <vertex x="3.1794" y="51.4522"/>
 <vertex x="3.1594" y="51.4522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.6094" y="52.0922"/>
 <vertex x="3.8794" y="51.8222"/>
 <vertex x="3.8894" y="51.8022"/>
@@ -9120,7 +9132,7 @@
 <vertex x="4.4794" y="51.5322"/>
 <vertex x="3.7594" y="52.2422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="4.2394" y="56.6422"/>
 <vertex x="3.9894" y="56.6422"/>
 <vertex x="3.9994" y="56.6222"/>
@@ -9154,7 +9166,7 @@
 <vertex x="4.2494" y="56.5022"/>
 <vertex x="4.2494" y="56.6122"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.7094" y="57.1422"/>
 <vertex x="3.6794" y="57.1522"/>
 <vertex x="3.6394" y="57.1522"/>
@@ -9258,7 +9270,7 @@
 <vertex x="3.7694" y="57.1322"/>
 <vertex x="3.7494" y="57.1422"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="4.3194" y="57.3322"/>
 <vertex x="4.1594" y="57.4922"/>
 <vertex x="4.4694" y="57.8022"/>
@@ -9270,7 +9282,7 @@
 <vertex x="4.7194" y="57.4522"/>
 <vertex x="4.5894" y="57.5922"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="4.9794" y="57.9822"/>
 <vertex x="4.8194" y="58.1522"/>
 <vertex x="5.1294" y="58.4622"/>
@@ -9282,7 +9294,7 @@
 <vertex x="5.3794" y="58.1122"/>
 <vertex x="5.2394" y="58.2522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="15.6478" y="73.6474"/>
 <vertex x="15.6478" y="71.6274"/>
 <vertex x="17.2578" y="71.6274"/>
@@ -9292,7 +9304,7 @@
 <vertex x="15.9578" y="71.9274"/>
 <vertex x="15.9578" y="73.6474"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="15.6478" y="73.6474"/>
 <vertex x="15.9578" y="73.6474"/>
 <vertex x="15.9578" y="74.7074"/>
@@ -9306,49 +9318,49 @@
 <vertex x="16.1678" y="75.0174"/>
 <vertex x="15.6478" y="75.0174"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="16.1678" y="72.1874"/>
 <vertex x="16.1678" y="73.3374"/>
 <vertex x="16.7378" y="73.3374"/>
 <vertex x="16.7378" y="72.1874"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="2.0294" y="56.0922"/>
 <vertex x="1.8094" y="56.3122"/>
 <vertex x="5.5994" y="60.0922"/>
 <vertex x="5.8094" y="59.8822"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.3894" y="55.6322"/>
 <vertex x="3.6894" y="55.6322"/>
 <vertex x="3.6894" y="55.4722"/>
 <vertex x="3.3894" y="55.4722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.3894" y="53.4622"/>
 <vertex x="3.6894" y="53.4622"/>
 <vertex x="3.6894" y="53.1722"/>
 <vertex x="3.3894" y="53.1722"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.3894" y="54.6122"/>
 <vertex x="3.6894" y="54.6122"/>
 <vertex x="3.6894" y="54.3222"/>
 <vertex x="3.3894" y="54.3222"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.3894" y="54.0422"/>
 <vertex x="3.6894" y="54.0422"/>
 <vertex x="3.6894" y="53.7522"/>
 <vertex x="3.3894" y="53.7522"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.3894" y="55.1922"/>
 <vertex x="3.6894" y="55.1922"/>
 <vertex x="3.6894" y="54.9022"/>
 <vertex x="3.3894" y="54.9022"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="3.3894" y="52.8922"/>
 <vertex x="3.6894" y="52.8922"/>
 <vertex x="3.6894" y="52.7322"/>
@@ -9601,7 +9613,7 @@
 <vertex x="61.3624" y="74.3102"/>
 <vertex x="61.3124" y="74.3402"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="26.2144" y="34.8742"/>
 <vertex x="26.2144" y="33.8242"/>
 <vertex x="26.7244" y="33.8242"/>
@@ -9642,7 +9654,7 @@
 <vertex x="26.6244" y="34.1542"/>
 <vertex x="26.6244" y="34.8742"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="26.2144" y="34.8742"/>
 <vertex x="26.6244" y="34.8742"/>
 <vertex x="26.6244" y="35.3042"/>
@@ -9673,7 +9685,7 @@
 <vertex x="26.7944" y="35.6342"/>
 <vertex x="26.2144" y="35.6342"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="28.6244" y="34.1642"/>
 <vertex x="28.6244" y="35.5842"/>
 <vertex x="28.3244" y="35.5842"/>
@@ -9696,7 +9708,7 @@
 <vertex x="29.0244" y="33.8342"/>
 <vertex x="29.0244" y="34.1642"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="30.0734" y="34.7042"/>
 <vertex x="30.0734" y="34.7142"/>
 <vertex x="30.1134" y="34.7342"/>
@@ -9843,7 +9855,7 @@
 <vertex x="30.1534" y="34.6742"/>
 <vertex x="30.1134" y="34.6942"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="59.6378" y="1.8808"/>
 <vertex x="59.6378" y="3.3008"/>
 <vertex x="59.3378" y="3.3008"/>
@@ -9866,7 +9878,7 @@
 <vertex x="60.0378" y="1.5508"/>
 <vertex x="60.0378" y="1.8808"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="62.9586" y="1.8908"/>
 <vertex x="62.4486" y="1.8908"/>
 <vertex x="62.4186" y="1.8808"/>
@@ -9950,7 +9962,7 @@
 <vertex x="61.6386" y="1.5508"/>
 <vertex x="62.9586" y="1.5508"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="60.858" y="2.6818"/>
 <vertex x="60.738" y="2.6818"/>
 <vertex x="60.678" y="2.6518"/>
@@ -9992,7 +10004,7 @@
 <vertex x="60.928" y="2.6418"/>
 <vertex x="60.918" y="2.6518"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="60.158" y="2.7818"/>
 <vertex x="60.158" y="2.7618"/>
 <vertex x="60.148" y="2.7418"/>
@@ -10079,7 +10091,7 @@
 <vertex x="60.508" y="2.7618"/>
 <vertex x="60.518" y="2.7818"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="60.158" y="2.7818"/>
 <vertex x="60.518" y="2.7818"/>
 <vertex x="60.528" y="2.8118"/>
@@ -10137,7 +10149,7 @@
 <vertex x="60.198" y="2.9118"/>
 <vertex x="60.178" y="2.8518"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="37.4138" y="2.6818"/>
 <vertex x="37.2938" y="2.6818"/>
 <vertex x="37.2338" y="2.6518"/>
@@ -10179,7 +10191,7 @@
 <vertex x="37.4838" y="2.6418"/>
 <vertex x="37.4738" y="2.6518"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="36.7138" y="2.7818"/>
 <vertex x="36.7138" y="2.7618"/>
 <vertex x="36.7038" y="2.7418"/>
@@ -10266,7 +10278,7 @@
 <vertex x="37.0638" y="2.7618"/>
 <vertex x="37.0738" y="2.7818"/>
 </polygon>
-<polygon width="0.001" layer="21">
+<polygon width="0.0762" layer="21">
 <vertex x="36.7138" y="2.7818"/>
 <vertex x="37.0738" y="2.7818"/>
 <vertex x="37.0838" y="2.8118"/>
@@ -10324,8 +10336,8 @@
 <vertex x="36.7538" y="2.9118"/>
 <vertex x="36.7338" y="2.8518"/>
 </polygon>
-<wire x1="39.9796" y1="2.4638" x2="56.7944" y2="2.4638" width="0.254" layer="21"/>
-<polygon width="0.001" layer="21">
+<wire x1="39.9796" y1="2.4638" x2="56.7944" y2="2.4638" width="0.0762" layer="21"/>
+<polygon width="0.0762" layer="21">
 <vertex x="96.6214" y="4.4782"/>
 <vertex x="96.6214" y="4.4882"/>
 <vertex x="96.6614" y="4.5082"/>
@@ -10485,9 +10497,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="CREATIVE_COMMONS">
-<text x="-20.32" y="5.08" size="1.778" layer="51">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
-<text x="0" y="2.54" size="1.778" layer="51"> https://creativecommons.org/licenses/by-sa/4.0/</text>
-<text x="11.43" y="0" size="1.778" layer="51">Designed by:</text>
+<text x="-20.32" y="5.08" size="1.778" layer="51" font="vector">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
+<text x="0" y="2.54" size="1.778" layer="51" font="vector"> https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="11.43" y="0" size="1.778" layer="51" font="vector">Designed by:</text>
 </package>
 <package name="FIDUCIAL-1X2">
 <smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
@@ -11592,6 +11604,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -12431,7 +12446,7 @@ design rules under a new name.</description>
 <wire x1="22.498" y1="41.1734" x2="22.498" y2="37.319" width="0.254" layer="1"/>
 <wire x1="22.498" y1="37.319" x2="22.733" y2="37.084" width="0.254" layer="1"/>
 <wire x1="22.225" y1="37.592" x2="22.733" y2="37.084" width="0.254" layer="16"/>
-<polygon width="0.001" layer="1" orphans="yes">
+<polygon width="0.0762" layer="1" orphans="yes">
 <vertex x="97.8694" y="42.1022"/>
 <vertex x="97.8694" y="41.7022"/>
 <vertex x="99.3794" y="41.7022"/>
@@ -13118,7 +13133,7 @@ design rules under a new name.</description>
 <wire x1="88.268" y1="11.434" x2="88.268" y2="12.954" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$14">
-<polygon width="0.001" layer="1" orphans="yes">
+<polygon width="0.0762" layer="1" orphans="yes">
 <vertex x="101.8894" y="57.8122"/>
 <vertex x="103.4894" y="57.8122"/>
 <vertex x="103.4894" y="58.2122"/>
@@ -13307,7 +13322,7 @@ design rules under a new name.</description>
 </polygon>
 </signal>
 <signal name="N$22">
-<polygon width="0.001" layer="1" orphans="yes">
+<polygon width="0.0762" layer="1" orphans="yes">
 <vertex x="97.6694" y="43.8822"/>
 <vertex x="97.1694" y="43.8822"/>
 <vertex x="96.9194" y="42.8622"/>
